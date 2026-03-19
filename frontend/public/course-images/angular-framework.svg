@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DD0031;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C3002F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DD0031;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Angular Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Angular shield shape -->
+    <path d="M 50 20 L 70 30 L 70 70 L 50 80 L 30 70 L 30 30 Z" fill="#DD0031" opacity="0.9"/>
+    <text x="50" y="55" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
+    <text x="50" y="95" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Angular</text>
+  </g>
+  
+  <!-- Component Architecture -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Component Architecture</text>
+    
+    <!-- App component -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    <rect x="15" y="40" width="170" height="15" fill="#DD0031" rx="2"/>
+    <text x="100" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">AppComponent</text>
+    
+    <!-- Child components -->
+    <rect x="20" y="60" width="40" height="35" fill="#C3002F" rx="2"/>
+    <text x="40" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Header</text>
+    
+    <rect x="70" y="60" width="40" height="35" fill="#DD0031" rx="2"/>
+    <text x="90" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Main</text>
+    
+    <rect x="120" y="60" width="40" height="35" fill="#C3002F" rx="2"/>
+    <text x="140" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Footer</text>
+    
+    <rect x="165" y="60" width="15" height="35" fill="#DD0031" rx="2"/>
+    <text x="172" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Nav</text>
+  </g>
+  
+  <!-- TypeScript Integration -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">TypeScript</text>
+    
+    <!-- TypeScript code -->
+    <text x="10" y="40" fill="#C678DD" font-family="monospace" font-size="10">import</text>
+    <text x="40" y="40" fill="#E06C75" font-family="monospace" font-size="10">{</text>
+    <text x="50" y="40" fill="#61DAFB" font-family="monospace" font-size="10">Component</text>
+    <text x="100" y="40" fill="#E06C75" font-family="monospace" font-size="10">}</text>
+    <text x="110" y="40" fill="#C678DD" font-family="monospace" font-size="10">from</text>
+    <text x="135" y="40" fill="#98C379" font-family="monospace" font-size="10">'@angular/core';</text>
+    
+    <text x="10" y="55" fill="#C678DD" font-family="monospace" font-size="10">@Component</text>
+    <text x="65" y="55" fill="#E06C75" font-family="monospace" font-size="10">({</text>
+    
+    <text x="20" y="70" fill="#61DAFB" font-family="monospace" font-size="10">selector</text>
+    <text x="60" y="70" fill="#D19A66" font-family="monospace" font-size="10">:</text>
+    <text x="65" y="70" fill="#98C379" font-family="monospace" font-size="10">'app-root'</text>
+    <text x="105" y="70" fill="#E06C75" font-family="monospace" font-size="10">,</text>
+    
+    <text x="20" y="85" fill="#61DAFB" font-family="monospace" font-size="10">templateUrl</text>
+    <text x="75" y="85" fill="#D19A66" font-family="monospace" font-size="10">:</text>
+    <text x="80" y="85" fill="#98C379" font-family="monospace" font-size="10">'./app.component.html'</text>
+    
+    <text x="10" y="100" fill="#E06C75" font-family="monospace" font-size="10">})</text>
+    
+    <text x="10" y="115" fill="#C678DD" font-family="monospace" font-size="10">export class</text>
+    <text x="70" y="115" fill="#61DAFB" font-family="monospace" font-size="10">AppComponent</text>
+    <text x="140" y="115" fill="#D19A66" font-family="monospace" font-size="10">{}</text>
+  </g>
+  
+  <!-- Angular Features -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Core Features</text>
+    
+    <!-- Feature boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#DD0031" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Directives</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#C3002F" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Services</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#DD0031" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Dependency Injection</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#C3002F" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">RxJS</text>
+    
+    <rect x="10" y="95" width="85" height="20" fill="#DD0031" rx="3"/>
+    <text x="52" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Routing</text>
+    
+    <rect x="105" y="95" width="85" height="20" fill="#C3002F" rx="3"/>
+    <text x="147" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Forms</text>
+  </g>
+  
+  <!-- CLI Commands -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Angular CLI</text>
+    
+    <!-- Commands -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">ng new my-app</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">ng generate component header</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">ng generate service data</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">ng build --prod</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">ng serve --open</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">ng test</text>
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">ng e2e</text>
+  </g>
+  
+  <!-- Data Binding -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Data Binding</text>
+    
+    <!-- Binding types -->
+    <rect x="10" y="35" width="85" height="25" fill="#DD0031" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">{{ }}</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#C3002F" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">[ ]</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#DD0031" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">( )</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#C3002F" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">[( )]</text>
+    
+    <!-- Descriptions -->
+    <text x="52" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Interpolation</text>
+    <text x="147" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Property</text>
+    <text x="52" y="115" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Event</text>
+    <text x="147" y="115" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Two-way</text>
+  </g>
+  
+  <!-- Modules -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#DD0031" font-family="Arial, sans-serif" font-size="14" font-weight="bold">NgModules</text>
+    
+    <!-- Module structure -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <rect x="15" y="40" width="170" height="12" fill="#DD0031" rx="2"/>
+    <text x="100" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">AppModule</text>
+    
+    <!-- Module content -->
+    <text x="20" y="60" fill="#666666" font-family="monospace" font-size="8">declarations: [AppComponent]</text>
+    <text x="20" y="72" fill="#666666" font-family="monospace" font-size="8">imports: [BrowserModule, FormsModule]</text>
+    <text x="20" y="84" fill="#666666" font-family="monospace" font-size="8">providers: [DataService]</text>
+    <text x="20" y="96" fill="#666666" font-family="monospace" font-size="8">bootstrap: [AppComponent]</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Modular Architecture</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Angular Framework Mastery</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Enterprise-Scale Applications</text>
+</svg>

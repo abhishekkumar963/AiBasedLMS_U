@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#47A248;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5FAF58;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#47A248;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- MongoDB Logo -->
+  <g transform="translate(350, 120)">
+    <!-- MongoDB leaf shape -->
+    <path d="M 50 20 Q 30 40, 50 60 Q 70 40, 50 20" fill="#47A248" opacity="0.9"/>
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">MongoDB</text>
+    <text x="50" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">NoSQL Database</text>
+  </g>
+  
+  <!-- Document Structure -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="180" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="90" y="20" text-anchor="middle" fill="#47A248" font-family="monospace" font-size="14" font-weight="bold">Document Structure</text>
+    
+    <!-- JSON document -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="10">{</text>
+    <text x="20" y="52" fill="#E06C75" font-family="monospace" font-size="10">"_id"</text>
+    <text x="45" y="52" fill="#D4D4D4" font-family="monospace" font-size="10">:</text>
+    <text x="52" y="52" fill="#98C379" font-family="monospace" font-size="10">ObjectId("...")</text>
+    <text x="20" y="64" fill="#E06C75" font-family="monospace" font-size="10">"name"</text>
+    <text x="50" y="64" fill="#D4D4D4" font-family="monospace" font-size="10">:</text>
+    <text x="57" y="64" fill="#98C379" font-family="monospace" font-size="10">"John"</text>
+    <text x="20" y="76" fill="#E06C75" font-family="monospace" font-size="10">"age"</text>
+    <text x="40" y="76" fill="#D4D4D4" font-family="monospace" font-size="10">:</text>
+    <text x="47" y="76" fill="#D19A66" font-family="monospace" font-size="10">30</text>
+    <text x="20" y="88" fill="#E06C75" font-family="monospace" font-size="10">"skills"</text>
+    <text x="50" y="88" fill="#D4D4D4" font-family="monospace" font-size="10">:</text>
+    <text x="57" y="88" fill="#D4D4D4" font-family="monospace" font-size="10">[</text>
+    <text x="62" y="88" fill="#98C379" font-family="monospace" font-size="10">"JS"</text>
+    <text x="82" y="88" fill="#D4D4D4" font-family="monospace" font-size="10">,</text>
+    <text x="87" y="88" fill="#98C379" font-family="monospace" font-size="10">"Python"</text>
+    <text x="125" y="88" fill="#D4D4D4" font-family="monospace" font-size="10">]</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="10">}</text>
+    
+    <text x="90" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">BSON Format</text>
+  </g>
+  
+  <!-- Collections -->
+  <g transform="translate(300, 100)">
+    <rect x="0" y="0" width="160" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="80" y="20" text-anchor="middle" fill="#47A248" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Collections</text>
+    
+    <!-- Database structure -->
+    <rect x="10" y="35" width="140" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Collection boxes -->
+    <rect x="20" y="45" width="50" height="20" fill="#47A248" rx="2"/>
+    <text x="45" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">users</text>
+    
+    <rect x="80" y="45" width="50" height="20" fill="#5FAF58" rx="2"/>
+    <text x="105" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">products</text>
+    
+    <rect x="20" y="70" width="50" height="20" fill="#47A248" rx="2"/>
+    <text x="45" y="83" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">orders</text>
+    
+    <rect x="80" y="70" width="50" height="20" fill="#5FAF58" rx="2"/>
+    <text x="105" y="83" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">reviews</text>
+    
+    <text x="80" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Flexible Schema</text>
+  </g>
+  
+  <!-- Query Operations -->
+  <g transform="translate(480, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#47A248" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Query Operations</text>
+    
+    <!-- Query examples -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">db.users.find({age: {$gt: 25}})</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">db.products.insertOne({...})</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">db.users.updateOne({_id: 1}, {$set: {...}})</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">db.orders.deleteMany({status: "cancelled"})</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">db.users.aggregate([{$group: {...}}])</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">db.products.createIndex({name: 1})</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">CRUD & Aggregation</text>
+  </g>
+  
+  <!-- Indexes -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#47A248" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Indexing Strategy</text>
+    
+    <!-- Index types -->
+    <rect x="10" y="35" width="80" height="25" fill="#47A248" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Single Field</text>
+    
+    <rect x="100" y="35" width="80" height="25" fill="#5FAF58" rx="3"/>
+    <text x="140" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Compound</text>
+    
+    <rect x="10" y="65" width="80" height="25" fill="#47A248" rx="3"/>
+    <text x="50" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Text Index</text>
+    
+    <rect x="100" y="65" width="80" height="25" fill="#5FAF58" rx="3"/>
+    <text x="140" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Geospatial</text>
+    
+    <text x="100" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Performance Optimization</text>
+  </g>
+  
+  <!-- Replication -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#47A248" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Replication</text>
+    
+    <!-- Replica set visualization -->
+    <circle cx="50" cy="50" r="15" fill="#47A248" opacity="0.8"/>
+    <text x="50" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Primary</text>
+    <text x="50" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Node</text>
+    
+    <circle cx="100" cy="50" r="12" fill="#5FAF58" opacity="0.8"/>
+    <text x="100" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Secondary</text>
+    <text x="100" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">1</text>
+    
+    <circle cx="150" cy="50" r="12" fill="#5FAF58" opacity="0.8"/>
+    <text x="150" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Secondary</text>
+    <text x="150" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">2</text>
+    
+    <!-- Replication arrows -->
+    <path d="M 65 50 L 85 50" stroke="#47A248" stroke-width="2" marker-end="url(#arrow-green)"/>
+    <path d="M 65 50 L 135 50" stroke="#47A248" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <text x="100" y="85" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">High Availability</text>
+    <text x="100" y="100" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Automatic Failover</text>
+  </g>
+  
+  <!-- Sharding -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#47A248" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Sharding</text>
+    
+    <!-- Shard visualization -->
+    <rect x="10" y="35" width="50" height="60" fill="#47A248" rx="3"/>
+    <text x="35" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Shard</text>
+    <text x="35" y="62" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">A</text>
+    <rect x="15" y="70" width="40" height="20" fill="#FFFFFF" opacity="0.3" rx="2"/>
+    
+    <rect x="65" y="35" width="50" height="60" fill="#5FAF58" rx="3"/>
+    <text x="90" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Shard</text>
+    <text x="90" y="62" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">B</text>
+    <rect x="70" y="70" width="40" height="20" fill="#FFFFFF" opacity="0.3" rx="2"/>
+    
+    <rect x="120" y="35" width="50" height="60" fill="#47A248" rx="3"/>
+    <text x="145" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Shard</text>
+    <text x="145" y="62" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">C</text>
+    <rect x="125" y="70" width="40" height="20" fill="#FFFFFF" opacity="0.3" rx="2"/>
+    
+    <text x="100" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Horizontal Scaling</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#47A248"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">MongoDB Database Essentials</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">NoSQL Database Design & Management</text>
+</svg>

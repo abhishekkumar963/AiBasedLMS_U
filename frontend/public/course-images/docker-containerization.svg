@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2496ED;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0db7ed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2496ED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Docker Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Docker whale -->
+    <ellipse cx="50" cy="40" rx="25" ry="15" fill="#2496ED" opacity="0.9"/>
+    <rect x="35" y="35" width="30" height="10" fill="#FFFFFF" opacity="0.8" rx="2"/>
+    <circle cx="40" cy="40" r="2" fill="#2496ED"/>
+    <circle cx="50" cy="40" r="2" fill="#2496ED"/>
+    <circle cx="60" cy="40" r="2" fill="#2496ED"/>
+    <text x="50" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Docker</text>
+  </g>
+  
+  <!-- Container Architecture -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Container Architecture</text>
+    
+    <!-- Host OS -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    <rect x="15" y="40" width="170" height="8" fill="#2496ED" opacity="0.8"/>
+    <text x="100" y="46" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Host Operating System</text>
+    
+    <!-- Docker Engine -->
+    <rect x="20" y="52" width="160" height="8" fill="#0db7ed" opacity="0.8"/>
+    <text x="100" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Docker Engine</text>
+    
+    <!-- Containers -->
+    <rect x="25" y="65" width="45" height="30" fill="#2496ED" rx="3"/>
+    <text x="47" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <text x="47" y="85" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">App 1</text>
+    
+    <rect x="75" y="65" width="45" height="30" fill="#0db7ed" rx="3"/>
+    <text x="97" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <text x="97" y="85" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">App 2</text>
+    
+    <rect x="125" y="65" width="45" height="30" fill="#2496ED" rx="3"/>
+    <text x="147" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Container</text>
+    <text x="147" y="85" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">App 3</text>
+  </g>
+  
+  <!-- Docker Commands -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Docker Commands</text>
+    
+    <!-- Command examples -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">docker build -t myapp .</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">docker run -d -p 8080:80 myapp</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">docker ps -a</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">docker images</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">docker exec -it container bash</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">docker-compose up -d</text>
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">docker push registry/myapp</text>
+  </g>
+  
+  <!-- Dockerfile -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Dockerfile</text>
+    
+    <!-- Dockerfile content -->
+    <text x="10" y="40" fill="#C678DD" font-family="monospace" font-size="10">FROM</text>
+    <text x="40" y="40" fill="#98C379" font-family="monospace" font-size="10">node:16-alpine</text>
+    
+    <text x="10" y="52" fill="#C678DD" font-family="monospace" font-size="10">WORKDIR</text>
+    <text x="65" y="52" fill="#98C379" font-family="monospace" font-size="10">/app</text>
+    
+    <text x="10" y="64" fill="#C678DD" font-family="monospace" font-size="10">COPY</text>
+    <text x="45" y="64" fill="#98C379" font-family="monospace" font-size="10">package*.json ./</text>
+    
+    <text x="10" y="76" fill="#C678DD" font-family="monospace" font-size="10">RUN</text>
+    <text x="30" y="76" fill="#98C379" font-family="monospace" font-size="10">npm install</text>
+    
+    <text x="10" y="88" fill="#C678DD" font-family="monospace" font-size="10">COPY</text>
+    <text x="45" y="88" fill="#98C379" font-family="monospace" font-size="10">. .</text>
+    
+    <text x="10" y="100" fill="#C678DD" font-family="monospace" font-size="10">EXPOSE</text>
+    <text x="55" y="100" fill="#98C379" font-family="monospace" font-size="10">3000</text>
+    
+    <text x="10" y="112" fill="#C678DD" font-family="monospace" font-size="10">CMD</text>
+    <text x="35" y="112" fill="#E06C75" font-family="monospace" font-size="10">["npm", "start"]</text>
+  </g>
+  
+  <!-- Docker Compose -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Docker Compose</text>
+    
+    <!-- Compose structure -->
+    <text x="10" y="40" fill="#E06C75" font-family="monospace" font-size="10">version:</text>
+    <text x="50" y="40" fill="#98C379" font-family="monospace" font-size="10">'3.8'</text>
+    
+    <text x="10" y="52" fill="#E06C75" font-family="monospace" font-size="10">services:</text>
+    
+    <text x="20" y="64" fill="#61DAFB" font-family="monospace" font-size="10">web:</text>
+    <text x="45" y="64" fill="#E06C75" font-family="monospace" font-size="10">build:</text>
+    <text x="75" y="64" fill="#98C379" font-family="monospace" font-size="10">.</text>
+    
+    <text x="30" y="76" fill="#E06C75" font-family="monospace" font-size="10">ports:</text>
+    <text x="65" y="76" fill="#D19A66" font-family="monospace" font-size="10">- "3000:3000"</text>
+    
+    <text x="20" y="88" fill="#61DAFB" font-family="monospace" font-size="10">db:</text>
+    <text x="35" y="88" fill="#E06C75" font-family="monospace" font-size="10">image:</text>
+    <text x="65" y="88" fill="#98C379" font-family="monospace" font-size="10">postgres:13</text>
+    
+    <text x="30" y="100" fill="#E06C75" font-family="monospace" font-size="10">environment:</text>
+    <text x="75" y="100" fill="#D19A66" font-family="monospace" font-size="10">- POSTGRES_DB=myapp</text>
+    
+    <text x="30" y="112" fill="#E06C75" font-family="monospace" font-size="10">volumes:</text>
+    <text x="75" y="112" fill="#98C379" font-family="monospace" font-size="10">- pgdata:/var/lib/postgresql</text>
+  </g>
+  
+  <!-- Container Registry -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Container Registry</text>
+    
+    <!-- Registry boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#2496ED" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Docker Hub</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#0db7ed" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">GitHub</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#2496ED" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">AWS ECR</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#0db7ed" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">GCR</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#2496ED" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Private Registry</text>
+  </g>
+  
+  <!-- Benefits -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#2496ED" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Benefits</text>
+    
+    <!-- Benefit items -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">✓ Portability</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">✓ Consistency</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">✓ Isolation</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">✓ Efficiency</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">✓ Scalability</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">✓ Security</text>
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">✓ DevOps Integration</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Docker Containerization</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Container Orchestration & Deployment</text>
+</svg>

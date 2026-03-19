@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45B7D1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- ML Logo -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="bold">ML</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Machine Learning</text>
+  </g>
+  
+  <!-- Supervised Learning -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Supervised Learning</text>
+    
+    <!-- Input data -->
+    <rect x="10" y="30" width="40" height="30" fill="#FFE5E5" rx="3"/>
+    <text x="30" y="50" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="10">Input</text>
+    
+    <!-- Arrow -->
+    <path d="M 50 45 L 70 45" stroke="#FF6B6B" stroke-width="2" marker-end="url(#arrow-red)"/>
+    
+    <!-- Model -->
+    <circle cx="90" cy="45" r="15" fill="#FF6B6B" opacity="0.8"/>
+    <text x="90" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Model</text>
+    
+    <!-- Arrow -->
+    <path d="M 105 45 L 125 45" stroke="#4ECDC4" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <!-- Output -->
+    <rect x="125" y="30" width="40" height="30" fill="#E5F5E5" rx="3"/>
+    <text x="145" y="50" text-anchor="middle" fill="#4ECDC4" font-family="Arial, sans-serif" font-size="10">Output</text>
+    
+    <!-- Examples -->
+    <text x="10" y="75" fill="#666666" font-family="monospace" font-size="9">Classification</text>
+    <text x="10" y="90" fill="#666666" font-family="monospace" font-size="9">Regression</text>
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">Decision Trees</text>
+  </g>
+  
+  <!-- Unsupervised Learning -->
+  <g transform="translate(260, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#4ECDC4" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Unsupervised Learning</text>
+    
+    <!-- Data points -->
+    <circle cx="30" cy="50" r="8" fill="#FF6B6B" opacity="0.7"/>
+    <circle cx="50" cy="40" r="8" fill="#FF6B6B" opacity="0.7"/>
+    <circle cx="40" cy="60" r="8" fill="#FF6B6B" opacity="0.7"/>
+    
+    <circle cx="90" cy="50" r="8" fill="#45B7D1" opacity="0.7"/>
+    <circle cx="110" cy="40" r="8" fill="#45B7D1" opacity="0.7"/>
+    <circle cx="100" cy="60" r="8" fill="#45B7D1" opacity="0.7"/>
+    
+    <!-- Examples -->
+    <text x="10" y="85" fill="#666666" font-family="monospace" font-size="9">Clustering</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">K-Means</text>
+    <text x="10" y="115" fill="#666666" font-family="monospace" font-size="9">PCA</text>
+  </g>
+  
+  <!-- Model Training Process -->
+  <g transform="translate(450, 250)">
+    <rect x="0" y="0" width="300" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="150" y="20" text-anchor="middle" fill="#45B7D1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Model Training Process</text>
+    
+    <!-- Training steps -->
+    <rect x="20" y="35" width="70" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="55" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Training Data</text>
+    
+    <rect x="100" y="35" width="70" height="25" fill="#4ECDC4" rx="3"/>
+    <text x="135" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Training</text>
+    
+    <rect x="180" y="35" width="70" height="25" fill="#45B7D1" rx="3"/>
+    <text x="215" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Evaluation</text>
+    
+    <!-- Arrows -->
+    <path d="M 90 47 L 100 47" stroke="#45B7D1" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <path d="M 170 47 L 180 47" stroke="#45B7D1" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    
+    <!-- Metrics -->
+    <text x="20" y="80" fill="#666666" font-family="monospace" font-size="9">Accuracy: 0.92</text>
+    <text x="20" y="95" fill="#666666" font-family="monospace" font-size="9">Precision: 0.89</text>
+    <text x="20" y="110" fill="#666666" font-family="monospace" font-size="9">Recall: 0.87</text>
+    
+    <text x="150" y="80" fill="#666666" font-family="monospace" font-size="9">F1-Score: 0.88</text>
+    <text x="150" y="95" fill="#666666" font-family="monospace" font-size="9">MSE: 0.023</text>
+    <text x="150" y="110" fill="#666666" font-family="monospace" font-size="9">R²: 0.91</text>
+  </g>
+  
+  <!-- Algorithms -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="150" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="75" y="20" text-anchor="middle" fill="#45B7D1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Popular Algorithms</text>
+    
+    <!-- Algorithm boxes -->
+    <rect x="10" y="35" width="60" height="20" fill="#FF6B6B" rx="2"/>
+    <text x="40" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">Linear Reg</text>
+    
+    <rect x="80" y="35" width="60" height="20" fill="#4ECDC4" rx="2"/>
+    <text x="110" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">Logistic Reg</text>
+    
+    <rect x="10" y="60" width="60" height="20" fill="#45B7D1" rx="2"/>
+    <text x="40" y="73" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">Random Forest</text>
+    
+    <rect x="80" y="60" width="60" height="20" fill="#FF6B6B" rx="2"/>
+    <text x="110" y="73" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">SVM</text>
+    
+    <rect x="10" y="85" width="60" height="20" fill="#4ECDC4" rx="2"/>
+    <text x="40" y="98" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">KNN</text>
+    
+    <rect x="80" y="85" width="60" height="20" fill="#45B7D1" rx="2"/>
+    <text x="110" y="98" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="9">Naive Bayes</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6B6B"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4ECDC4"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#45B7D1"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Machine Learning Fundamentals</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Algorithms, Training & Evaluation</text>
+</svg>

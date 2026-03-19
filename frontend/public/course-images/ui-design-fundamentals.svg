@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764BA2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667EEA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- UI Design Title -->
+  <g transform="translate(350, 120)">
+    <!-- Design tools icon -->
+    <rect x="30" y="30" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="4"/>
+    <circle cx="40" cy="40" r="3" fill="#667EEA"/>
+    <circle cx="50" cy="40" r="3" fill="#764BA2"/>
+    <circle cx="60" cy="40" r="3" fill="#667EEA"/>
+    <rect x="35" y="45" width="30" height="10" fill="#667EEA" opacity="0.3" rx="2"/>
+    
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">UI Design</text>
+    <text x="50" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12">Fundamentals</text>
+  </g>
+  
+  <!-- Design Elements -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Design Elements</text>
+    
+    <!-- Element boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#667EEA" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Color Theory</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#764BA2" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Typography</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#667EEA" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Layout</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#764BA2" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Spacing</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Visual Hierarchy</text>
+  </g>
+  
+  <!-- Color Palette -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Color Palette</text>
+    
+    <!-- Color swatches -->
+    <rect x="10" y="35" width="35" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="27" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Primary</text>
+    
+    <rect x="50" y="35" width="35" height="25" fill="#4ECDC4" rx="3"/>
+    <text x="67" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Secondary</text>
+    
+    <rect x="90" y="35" width="35" height="25" fill="#45B7D1" rx="3"/>
+    <text x="107" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Accent</text>
+    
+    <rect x="130" y="35" width="35" height="25" fill="#96CEB4" rx="3"/>
+    <text x="147" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Success</text>
+    
+    <rect x="170" y="35" width="20" height="25" fill="#FFEAA7" rx="3"/>
+    <text x="180" y="50" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Warning</text>
+    
+    <!-- Gradients -->
+    <rect x="10" y="70" width="180" height="40" fill="url(#colorGradient)" rx="3"/>
+    <text x="100" y="95" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Gradient Combinations</text>
+    
+    <!-- Color harmony -->
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">60-30-10 Rule</text>
+  </g>
+  
+  <!-- Typography -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Typography</text>
+    
+    <!-- Font samples -->
+    <text x="10" y="40" fill="#666666" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Heading Bold</text>
+    <text x="10" y="55" fill="#666666" font-family="Arial, sans-serif" font-size="14">Subheading Regular</text>
+    <text x="10" y="70" fill="#666666" font-family="Arial, sans-serif" font-size="12">Body Text Regular</text>
+    <text x="10" y="85" fill="#666666" font-family="Arial, sans-serif" font-size="10">Caption Small</text>
+    
+    <!-- Font properties -->
+    <text x="120" y="40" fill="#667EEA" font-family="monospace" font-size="8">24px Bold</text>
+    <text x="120" y="55" fill="#764BA2" font-family="monospace" font-size="8">18px Regular</text>
+    <text x="120" y="70" fill="#667EEA" font-family="monospace" font-size="8">16px Regular</text>
+    <text x="120" y="85" fill="#764BA2" font-family="monospace" font-size="8">12px Regular</text>
+    
+    <!-- Line height -->
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">Line Height: 1.5</text>
+    <text x="10" y="115" fill="#666666" font-family="monospace" font-size="9">Letter Spacing: 0.5px</text>
+  </g>
+  
+  <!-- Layout Grid -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Layout Grid</text>
+    
+    <!-- Grid visualization -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Grid columns -->
+    <line x1="30" y1="35" x2="30" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="50" y1="35" x2="50" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="70" y1="35" x2="70" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="90" y1="35" x2="90" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="110" y1="35" x2="110" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="130" y1="35" x2="130" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="150" y1="35" x2="150" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    <line x1="170" y1="35" x2="170" y2="105" stroke="#667EEA" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Grid rows -->
+    <line x1="10" y1="55" x2="190" y2="55" stroke="#764BA2" stroke-width="1" opacity="0.5"/>
+    <line x1="10" y1="75" x2="190" y2="75" stroke="#764BA2" stroke-width="1" opacity="0.5"/>
+    <line x1="10" y1="95" x2="190" y2="95" stroke="#764BA2" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Content blocks -->
+    <rect x="15" y="40" width="170" height="10" fill="#667EEA" opacity="0.3" rx="2"/>
+    <rect x="15" y="60" width="80" height="10" fill="#764BA2" opacity="0.3" rx="2"/>
+    <rect x="100" y="60" width="85" height="10" fill="#667EEA" opacity="0.3" rx="2"/>
+    <rect x="15" y="80" width="170" height="10" fill="#764BA2" opacity="0.3" rx="2"/>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">12-Column Grid System</text>
+  </g>
+  
+  <!-- Components -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">UI Components</text>
+    
+    <!-- Component samples -->
+    <rect x="10" y="35" width="85" height="25" fill="#667EEA" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Buttons</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#764BA2" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Forms</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#667EEA" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Cards</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#764BA2" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Navigation</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#667EEA" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Modals</text>
+  </g>
+  
+  <!-- Design Systems -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#667EEA" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Design Systems</text>
+    
+    <!-- System layers -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Principles -->
+    <rect x="15" y="40" width="170" height="12" fill="#667EEA" opacity="0.8"/>
+    <text x="100" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Design Principles</text>
+    
+    <!-- Guidelines -->
+    <rect x="15" y="55" width="170" height="12" fill="#764BA2" opacity="0.8"/>
+    <text x="100" y="63" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Guidelines</text>
+    
+    <!-- Components -->
+    <rect x="15" y="70" width="170" height="12" fill="#667EEA" opacity="0.8"/>
+    <text x="100" y="78" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Component Library</text>
+    
+    <!-- Documentation -->
+    <rect x="15" y="85" width="170" height="12" fill="#764BA2" opacity="0.8"/>
+    <text x="100" y="93" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Documentation</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Scalable Design</text>
+  </g>
+  
+  <!-- Color gradient definition -->
+  <defs>
+    <linearGradient id="colorGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764BA2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667EEA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">UI Design Fundamentals</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Visual Design Principles</text>
+</svg>

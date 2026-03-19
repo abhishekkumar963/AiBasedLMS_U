@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FB923C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F97316;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- UX Research Title -->
+  <g transform="translate(350, 120)">
+    <!-- Research icon -->
+    <circle cx="50" cy="40" r="20" fill="#FFFFFF" opacity="0.9"/>
+    <text x="50" y="35" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="16" font-weight="bold">UX</text>
+    <text x="50" y="48" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="12">Research</text>
+    
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">UX Research</text>
+    <text x="50" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12">Methods & Techniques</text>
+  </g>
+  
+  <!-- Research Methods -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Research Methods</text>
+    
+    <!-- Method boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#F97316" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Interviews</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#FB923C" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Surveys</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#F97316" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Usability Testing</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#FB923C" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">A/B Testing</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">User-Centered Research</text>
+  </g>
+  
+  <!-- User Personas -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">User Personas</text>
+    
+    <!-- Persona visualization -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Persona avatar -->
+    <circle cx="30" cy="55" r="12" fill="#F97316"/>
+    <text x="30" y="60" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">👤</text>
+    
+    <!-- Persona details -->
+    <text x="50" y="45" fill="#666666" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Sarah, 28</text>
+    <text x="50" y="55" fill="#666666" font-family="Arial, sans-serif" font-size="8">Product Manager</text>
+    <text x="50" y="65" fill="#666666" font-family="Arial, sans-serif" font-size="8">Tech-savvy, busy</text>
+    
+    <!-- Goals -->
+    <text x="15" y="85" fill="#F97316" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Goals:</text>
+    <text x="45" y="85" fill="#666666" font-family="Arial, sans-serif" font-size="7">Efficiency, simplicity</text>
+    
+    <!-- Pain points -->
+    <text x="15" y="95" fill="#FB923C" font-family="Arial, sans-serif" font-size="8" font-weight="bold">Pain:</text>
+    <text x="45" y="95" fill="#666666" font-family="Arial, sans-serif" font-size="7">Complex interfaces</text>
+  </g>
+  
+  <!-- Data Analysis -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Data Analysis</text>
+    
+    <!-- Analytics visualization -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Chart bars -->
+    <rect x="20" y="75" width="15" height="20" fill="#F97316"/>
+    <rect x="40" y="65" width="15" height="30" fill="#FB923C"/>
+    <rect x="60" y="70" width="15" height="25" fill="#F97316"/>
+    <rect x="80" y="60" width="15" height="35" fill="#FB923C"/>
+    <rect x="100" y="75" width="15" height="20" fill="#F97316"/>
+    <rect x="120" y="55" width="15" height="40" fill="#FB923C"/>
+    <rect x="140" y="70" width="15" height="25" fill="#F97316"/>
+    <rect x="160" y="65" width="15" height="30" fill="#FB923C"/>
+    
+    <!-- Metrics -->
+    <text x="20" y="50" fill="#666666" font-family="Arial, sans-serif" font-size="8">Task Success: 85%</text>
+    <text x="20" y="60" fill="#666666" font-family="Arial, sans-serif" font-size="8">Time on Task: 2.3min</text>
+    <text x="100" y="50" fill="#666666" font-family="Arial, sans-serif" font-size="8">Error Rate: 12%</text>
+    <text x="100" y="60" fill="#666666" font-family="Arial, sans-serif" font-size="8">Satisfaction: 4.2/5</text>
+  </g>
+  
+  <!-- Research Process -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Research Process</text>
+    
+    <!-- Process steps -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Step 1 -->
+    <rect x="15" y="40" width="35" height="15" fill="#F97316" rx="2"/>
+    <text x="32" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Plan</text>
+    
+    <!-- Step 2 -->
+    <rect x="55" y="40" width="35" height="15" fill="#FB923C" rx="2"/>
+    <text x="72" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Recruit</text>
+    
+    <!-- Step 3 -->
+    <rect x="95" y="40" width="35" height="15" fill="#F97316" rx="2"/>
+    <text x="112" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Conduct</text>
+    
+    <!-- Step 4 -->
+    <rect x="135" y="40" width="35" height="15" fill="#FB923C" rx="2"/>
+    <text x="152" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Analyze</text>
+    
+    <!-- Step 5 -->
+    <rect x="35" y="60" width="35" height="15" fill="#F97316" rx="2"/>
+    <text x="52" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Synthesize</text>
+    
+    <!-- Step 6 -->
+    <rect x="75" y="60" width="35" height="15" fill="#FB923C" rx="2"/>
+    <text x="92" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Report</text>
+    
+    <!-- Step 7 -->
+    <rect x="115" y="60" width="35" height="15" fill="#F97316" rx="2"/>
+    <text x="132" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Iterate</text>
+    
+    <!-- Arrows -->
+    <path d="M 50 47 L 55 47" stroke="#F97316" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    <path d="M 90 47 L 95 47" stroke="#FB923C" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    <path d="M 130 47 L 135 47" stroke="#F97316" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    
+    <text x="100" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Iterative Research Cycle</text>
+  </g>
+  
+  <!-- Tools & Software -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Research Tools</text>
+    
+    <!-- Tool boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#F97316" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Maze</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#FB923C" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">UserTesting</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#F97316" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Hotjar</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#FB923C" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">OptimalWorkshop</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#F97316" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Google Analytics</text>
+  </g>
+  
+  <!-- Insights & Recommendations -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#F97316" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Insights</text>
+    
+    <!-- Insight types -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Key findings -->
+    <rect x="15" y="40" width="170" height="8" fill="#F97316" opacity="0.8"/>
+    <text x="100" y="46" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Key Findings</text>
+    
+    <!-- User quotes -->
+    <rect x="15" y="52" width="170" height="8" fill="#FB923C" opacity="0.8"/>
+    <text x="100" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">User Quotes</text>
+    
+    <!-- Pain points -->
+    <rect x="15" y="64" width="170" height="8" fill="#F97316" opacity="0.8"/>
+    <text x="100" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Pain Points</text>
+    
+    <!-- Recommendations -->
+    <rect x="15" y="76" width="170" height="8" fill="#FB923C" opacity="0.8"/>
+    <text x="100" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Recommendations</text>
+    
+    <!-- Action items -->
+    <rect x="15" y="88" width="170" height="12" fill="#F97316" opacity="0.8"/>
+    <text x="100" y="96" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Action Items</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F97316"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">UX Research Methods</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">User Research & Analysis</text>
+</svg>

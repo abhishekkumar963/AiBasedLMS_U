@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Next.js Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Next.js triangle shape -->
+    <polygon points="50,20 30,60 70,60" fill="#000000" opacity="0.9"/>
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Next.js</text>
+    <text x="50" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Full Stack Framework</text>
+  </g>
+  
+  <!-- File-Based Routing -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="180" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="90" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">File-Based Routing</text>
+    
+    <!-- File structure -->
+    <rect x="10" y="35" width="160" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Folder -->
+    <rect x="15" y="40" width="150" height="8" fill="#000000" opacity="0.8"/>
+    <text x="90" y="46" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">pages/</text>
+    
+    <!-- Files -->
+    <rect x="25" y="55" width="30" height="8" fill="#000000" opacity="0.6"/>
+    <text x="40" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">index.js</text>
+    
+    <rect x="60" y="55" width="35" height="8" fill="#000000" opacity="0.6"/>
+    <text x="77" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">about.js</text>
+    
+    <rect x="100" y="55" width="35" height="8" fill="#000000" opacity="0.6"/>
+    <text x="117" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">blog/[id].js</text>
+    
+    <rect x="25" y="70" width="40" height="8" fill="#000000" opacity="0.6"/>
+    <text x="45" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">api/users.js</text>
+    
+    <rect x="70" y="70" width="40" height="8" fill="#000000" opacity="0.6"/>
+    <text x="90" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">_app.js</text>
+    
+    <rect x="115" y="70" width="40" height="8" fill="#000000" opacity="0.6"/>
+    <text x="135" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">_document.js</text>
+    
+    <rect x="25" y="85" width="35" height="8" fill="#000000" opacity="0.6"/>
+    <text x="42" y="91" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">404.js</text>
+    
+    <rect x="65" y="85" width="35" height="8" fill="#000000" opacity="0.6"/>
+    <text x="82" y="91" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">500.js</text>
+    
+    <rect x="105" y="85" width="35" height="8" fill="#000000" opacity="0.6"/>
+    <text x="122" y="91" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">_error.js</text>
+  </g>
+  
+  <!-- Rendering Methods -->
+  <g transform="translate(300, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Rendering Methods</text>
+    
+    <!-- Method boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SSR</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SSG</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ISR</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">CSR</text>
+    
+    <!-- Descriptions -->
+    <text x="52" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Server-Side</text>
+    <text x="147" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Static Site</text>
+    <text x="52" y="115" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Incremental</text>
+    <text x="147" y="115" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Client-Side</text>
+  </g>
+  
+  <!-- API Routes -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">API Routes</text>
+    
+    <!-- API code -->
+    <text x="10" y="40" fill="#C678DD" font-family="monospace" font-size="10">export default</text>
+    <text x="70" y="40" fill="#61DAFB" font-family="monospace" font-size="10">function</text>
+    <text x="110" y="40" fill="#61DAFB" font-family="monospace" font-size="10">handler</text>
+    <text x="145" y="40" fill="#E06C75" font-family="monospace" font-size="10">(req, res)</text>
+    <text x="175" y="40" fill="#D19A66" font-family="monospace" font-size="10">{</text>
+    
+    <text x="20" y="55" fill="#C678DD" font-family="monospace" font-size="10">if</text>
+    <text x="35" y="55" fill="#E06C75" font-family="monospace" font-size="10">(req.method</text>
+    <text x="85" y="55" fill="#D19A66" font-family="monospace" font-size="10">===</text>
+    <text x="95" y="55" fill="#98C379" font-family="monospace" font-size="10">'GET')</text>
+    <text x="125" y="55" fill="#D19A66" font-family="monospace" font-size="10">{</text>
+    
+    <text x="30" y="70" fill="#56B6C2" font-family="monospace" font-size="10">return</text>
+    <text x="55" y="70" fill="#61DAFB" font-family="monospace" font-size="10">res</text>
+    <text x="70" y="70" fill="#E06C75" font-family="monospace" font-size="10">.</text>
+    <text x="75" y="70" fill="#61DAFB" font-family="monospace" font-size="10">status</text>
+    <text x="100" y="70" fill="#E06C75" font-family="monospace" font-size="10">(200).</text>
+    <text x="125" y="70" fill="#61DAFB" font-family="monospace" font-size="10">json</text>
+    <text x="145" y="70" fill="#E06C75" font-family="monospace" font-size="10">({</text>
+    <text x="150" y="70" fill="#98C379" font-family="monospace" font-size="10">data</text>
+    <text x="165" y="70" fill="#D19A66" font-family="monospace" font-size="10">:</text>
+    <text x="170" y="70" fill="#98C379" font-family="monospace" font-size="10">'Hello'</text>
+    <text x="185" y="70" fill="#E06C75" font-family="monospace" font-size="10">});</text>
+    
+    <text x="20" y="85" fill="#E06C75" font-family="monospace" font-size="10">}</text>
+    
+    <text x="10" y="100" fill="#E06C75" font-family="monospace" font-size="10">}</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Full-Stack API</text>
+  </g>
+  
+  <!-- Performance Features -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Performance</text>
+    
+    <!-- Feature boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Auto Optimize</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Code Splitting</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Image Opt</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Bundle Analyzer</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#000000" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Font Optimization</text>
+  </g>
+  
+  <!-- Deployment -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Deployment</text>
+    
+    <!-- Platform boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Vercel</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Netlify</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">AWS</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Docker</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#000000" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Static Export</text>
+  </g>
+  
+  <!-- Data Fetching -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Data Fetching</text>
+    
+    <!-- Fetch methods -->
+    <rect x="10" y="35" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">getStaticProps</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">getServerSideProps</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#000000" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">getStaticPaths</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#333333" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SWR/React Query</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Client & Server Data</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Next.js Full Stack Development</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Production-Ready Applications</text>
+</svg>

@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6522C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F27121;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6522C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Monitoring Title -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Monitoring</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Observability</text>
+  </g>
+  
+  <!-- Monitoring Stack -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Monitoring Stack</text>
+    
+    <!-- Stack components -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Prometheus -->
+    <rect x="15" y="40" width="50" height="20" fill="#E6522C" rx="2"/>
+    <text x="40" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Prometheus</text>
+    
+    <!-- Grafana -->
+    <rect x="70" y="40" width="50" height="20" fill="#F27121" rx="2"/>
+    <text x="95" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Grafana</text>
+    
+    <!-- AlertManager -->
+    <rect x="125" y="40" width="60" height="20" fill="#E6522C" rx="2"/>
+    <text x="155" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">AlertManager</text>
+    
+    <!-- Data sources -->
+    <rect x="15" y="65" width="40" height="15" fill="#F27121" rx="2"/>
+    <text x="35" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Apps</text>
+    
+    <rect x="60" y="65" width="40" height="15" fill="#E6522C" rx="2"/>
+    <text x="80" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Nodes</text>
+    
+    <rect x="105" y="65" width="40" height="15" fill="#F27121" rx="2"/>
+    <text x="125" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">K8s</text>
+    
+    <rect x="150" y="65" width="40" height="15" fill="#E6522C" rx="2"/>
+    <text x="170" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Cloud</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Metrics Collection</text>
+  </g>
+  
+  <!-- Metrics Types -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Metrics Types</text>
+    
+    <!-- Metric boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#E6522C" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Counter</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F27121" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Gauge</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#E6522C" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Histogram</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F27121" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Summary</text>
+    
+    <!-- Examples -->
+    <text x="52" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">requests_total</text>
+    <text x="147" y="105" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">memory_usage</text>
+  </g>
+  
+  <!-- Alerting Rules -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Alerting Rules</text>
+    
+    <!-- Rule content -->
+    <text x="10" y="40" fill="#E06C75" font-family="monospace" font-size="10">groups:</text>
+    <text x="20" y="52" fill="#E06C75" font-family="monospace" font-size="10">- name: alerts</text>
+    <text x="30" y="64" fill="#61DAFB" font-family="monospace" font-size="10">rules:</text>
+    <text x="40" y="76" fill="#E06C75" font-family="monospace" font-size="10">- alert: HighCPU</text>
+    <text x="50" y="88" fill="#61DAFB" font-family="monospace" font-size="10">expr:</text>
+    <text x="75" y="88" fill="#98C379" font-family="monospace" font-size="10">cpu > 80</text>
+    <text x="50" y="100" fill="#61DAFB" font-family="monospace" font-size="10">for:</text>
+    <text x="70" y="100" fill="#D19A66" font-family="monospace" font-size="10">5m</text>
+    <text x="50" y="112" fill="#61DAFB" font-family="monospace" font-size="10">labels:</text>
+    <text x="75" y="112" fill="#98C379" font-family="monospace" font-size="10">severity: warning</text>
+  </g>
+  
+  <!-- Logging -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Logging</text>
+    
+    <!-- ELK Stack -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Elasticsearch -->
+    <rect x="15" y="40" width="50" height="20" fill="#E6522C" rx="2"/>
+    <text x="40" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Elasticsearch</text>
+    
+    <!-- Logstash -->
+    <rect x="70" y="40" width="50" height="20" fill="#F27121" rx="2"/>
+    <text x="95" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Logstash</text>
+    
+    <!-- Kibana -->
+    <rect x="125" y="40" width="60" height="20" fill="#E6522C" rx="2"/>
+    <text x="155" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Kibana</text>
+    
+    <!-- Log sources -->
+    <rect x="15" y="65" width="40" height="15" fill="#F27121" rx="2"/>
+    <text x="35" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Apps</text>
+    
+    <rect x="60" y="65" width="40" height="15" fill="#E6522C" rx="2"/>
+    <text x="80" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">System</text>
+    
+    <rect x="105" y="65" width="40" height="15" fill="#F27121" rx="2"/>
+    <text x="125" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Access</text>
+    
+    <rect x="150" y="65" width="40" height="15" fill="#E6522C" rx="2"/>
+    <text x="170" y="76" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Error</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Centralized Logging</text>
+  </g>
+  
+  <!-- Tracing -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Distributed Tracing</text>
+    
+    <!-- Trace flow -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Service chain -->
+    <rect x="15" y="45" width="35" height="15" fill="#E6522C" rx="2"/>
+    <text x="32" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">API</text>
+    
+    <path d="M 50 52 L 65 52" stroke="#E6522C" stroke-width="2" marker-end="url(#arrow-red)"/>
+    
+    <rect x="65" y="45" width="35" height="15" fill="#F27121" rx="2"/>
+    <text x="82" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Auth</text>
+    
+    <path d="M 100 52 L 115 52" stroke="#E6522C" stroke-width="2" marker-end="url(#arrow-red)"/>
+    
+    <rect x="115" y="45" width="35" height="15" fill="#E6522C" rx="2"/>
+    <text x="132" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">DB</text>
+    
+    <path d="M 150 52 L 165 52" stroke="#E6522C" stroke-width="2" marker-end="url(#arrow-red)"/>
+    
+    <rect x="165" y="45" width="20" height="15" fill="#F27121" rx="2"/>
+    <text x="175" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Cache</text>
+    
+    <!-- Trace tools -->
+    <rect x="15" y="70" width="50" height="15" fill="#E6522C" rx="2"/>
+    <text x="40" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Jaeger</text>
+    
+    <rect x="70" y="70" width="50" height="15" fill="#F27121" rx="2"/>
+    <text x="95" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Zipkin</text>
+    
+    <rect x="125" y="70" width="60" height="15" fill="#E6522C" rx="2"/>
+    <text x="155" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">OpenTelemetry</text>
+  </g>
+  
+  <!-- SRE Principles -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#E6522C" font-family="Arial, sans-serif" font-size="14" font-weight="bold">SRE Principles</text>
+    
+    <!-- Principle boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#E6522C" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SLI/SLO</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F27121" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Error Budget</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#E6522C" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Toil Reduction</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F27121" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Monitoring</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Reliability Engineering</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E6522C"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Monitoring & Observability</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">System Health & Performance</text>
+</svg>

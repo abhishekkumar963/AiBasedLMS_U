@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9333EA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B46C1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Neural Network Title -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Neural</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Networks</text>
+  </g>
+  
+  <!-- Deep Neural Network Architecture -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#6B46C1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Deep Network Architecture</text>
+    
+    <!-- Input layer -->
+    <circle cx="30" cy="40" r="6" fill="#6B46C1" opacity="0.8"/>
+    <circle cx="30" cy="60" r="6" fill="#6B46C1" opacity="0.8"/>
+    <circle cx="30" cy="80" r="6" fill="#6B46C1" opacity="0.8"/>
+    
+    <!-- Hidden layer 1 -->
+    <circle cx="70" cy="30" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="70" cy="45" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="70" cy="60" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="70" cy="75" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="70" cy="90" r="6" fill="#9333EA" opacity="0.8"/>
+    
+    <!-- Hidden layer 2 -->
+    <circle cx="110" cy="35" r="6" fill="#A855F7" opacity="0.8"/>
+    <circle cx="110" cy="50" r="6" fill="#A855F7" opacity="0.8"/>
+    <circle cx="110" cy="65" r="6" fill="#A855F7" opacity="0.8"/>
+    <circle cx="110" cy="80" r="6" fill="#A855F7" opacity="0.8"/>
+    
+    <!-- Hidden layer 3 -->
+    <circle cx="150" cy="40" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="150" cy="55" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="150" cy="70" r="6" fill="#9333EA" opacity="0.8"/>
+    <circle cx="150" cy="85" r="6" fill="#9333EA" opacity="0.8"/>
+    
+    <!-- Output layer -->
+    <circle cx="190" cy="50" r="6" fill="#6B46C1" opacity="0.8"/>
+    <circle cx="190" cy="70" r="6" fill="#6B46C1" opacity="0.8"/>
+    
+    <!-- Connections (sample) -->
+    <line x1="36" y1="40" x2="64" y2="30" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="36" y1="40" x2="64" y2="45" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="36" y1="60" x2="64" y2="45" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="36" y1="60" x2="64" y2="60" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="36" y1="80" x2="64" y2="75" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="36" y1="80" x2="64" y2="90" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <line x1="76" y1="30" x2="104" y2="35" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="76" y1="45" x2="104" y2="35" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="76" y1="45" x2="104" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="76" y1="60" x2="104" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="76" y1="60" x2="104" y2="65" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <line x1="116" y1="35" x2="144" y2="40" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="116" y1="50" x2="144" y2="40" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="116" y1="50" x2="144" y2="55" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="116" y1="65" x2="144" y2="55" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="116" y1="65" x2="144" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <line x1="156" y1="40" x2="184" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="156" y1="55" x2="184" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="156" y1="55" x2="184" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="156" y1="70" x2="184" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <!-- Layer labels -->
+    <text x="30" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Input</text>
+    <text x="70" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Hidden 1</text>
+    <text x="110" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Hidden 2</text>
+    <text x="150" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Hidden 3</text>
+    <text x="190" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Output</text>
+  </g>
+  
+  <!-- Backpropagation -->
+  <g transform="translate(380, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#6B46C1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Backpropagation</text>
+    
+    <!-- Forward pass -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">Forward Pass:</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">y = f(Wx + b)</text>
+    
+    <!-- Loss calculation -->
+    <text x="10" y="68" fill="#666666" font-family="monospace" font-size="9">Loss = MSE(y_pred, y_true)</text>
+    
+    <!-- Backward pass -->
+    <text x="10" y="84" fill="#666666" font-family="monospace" font-size="9">Backward Pass:</text>
+    <text x="10" y="96" fill="#666666" font-family="monospace" font-size="9">∂L/∂W = ∂L/∂y * ∂y/∂W</text>
+    
+    <!-- Update -->
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">W = W - α * ∂L/∂W</text>
+  </g>
+  
+  <!-- Activation Functions -->
+  <g transform="translate(600, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#6B46C1" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Activations</text>
+    
+    <!-- Function boxes -->
+    <rect x="10" y="35" width="55" height="20" fill="#6B46C1" rx="2"/>
+    <text x="37" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">ReLU</text>
+    
+    <rect x="75" y="35" width="55" height="20" fill="#9333EA" rx="2"/>
+    <text x="102" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Sigmoid</text>
+    
+    <rect x="10" y="60" width="55" height="20" fill="#A855F7" rx="2"/>
+    <text x="37" y="73" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Tanh</text>
+    
+    <rect x="75" y="60" width="55" height="20" fill="#6B46C1" rx="2"/>
+    <text x="102" y="73" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Softmax</text>
+    
+    <rect x="10" y="85" width="55" height="20" fill="#9333EA" rx="2"/>
+    <text x="37" y="98" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Leaky ReLU</text>
+    
+    <rect x="75" y="85" width="55" height="20" fill="#A855F7" rx="2"/>
+    <text x="102" y="98" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">GELU</text>
+  </g>
+  
+  <!-- Training Process -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#6B46C1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Training Process</text>
+    
+    <!-- Training steps -->
+    <rect x="10" y="35" width="70" height="25" fill="#6B46C1" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Initialize</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#9333EA" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Forward</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#A855F7" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Loss</text>
+    
+    <rect x="10" y="65" width="70" height="25" fill="#6B46C1" rx="3"/>
+    <text x="45" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Backward</text>
+    
+    <rect x="90" y="65" width="70" height="25" fill="#9333EA" rx="3"/>
+    <text x="125" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Update</text>
+    
+    <rect x="170" y="65" width="70" height="25" fill="#A855F7" rx="3"/>
+    <text x="205" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Repeat</text>
+    
+    <!-- Epoch counter -->
+    <text x="125" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Epoch: 1000/1000 | Loss: 0.001</text>
+  </g>
+  
+  <!-- Applications -->
+  <g transform="translate(380, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#6B46C1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Deep Learning Applications</text>
+    
+    <!-- Application areas -->
+    <rect x="10" y="35" width="110" height="25" fill="#6B46C1" rx="3"/>
+    <text x="65" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Computer Vision</text>
+    
+    <rect x="130" y="35" width="110" height="25" fill="#9333EA" rx="3"/>
+    <text x="185" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">NLP</text>
+    
+    <rect x="10" y="65" width="110" height="25" fill="#A855F7" rx="3"/>
+    <text x="65" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Speech Recognition</text>
+    
+    <rect x="130" y="65" width="110" height="25" fill="#6B46C1" rx="3"/>
+    <text x="185" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Game AI</text>
+    
+    <rect x="70" y="95" width="110" height="20" fill="#9333EA" rx="3"/>
+    <text x="125" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Autonomous Systems</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Neural Networks Deep Dive</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Deep Learning Architecture & Training</text>
+</svg>

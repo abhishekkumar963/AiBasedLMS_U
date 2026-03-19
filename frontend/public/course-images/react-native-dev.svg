@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61DAFB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#21232A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#61DAFB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- React Native Logo -->
+  <g transform="translate(350, 120)">
+    <ellipse cx="50" cy="40" rx="50" ry="18" fill="none" stroke="#61DAFB" stroke-width="3" opacity="0.9"/>
+    <ellipse cx="50" cy="40" rx="50" ry="18" fill="none" stroke="#61DAFB" stroke-width="3" opacity="0.9" transform="rotate(60 50 40)"/>
+    <ellipse cx="50" cy="40" rx="50" ry="18" fill="none" stroke="#61DAFB" stroke-width="3" opacity="0.9" transform="rotate(120 50 40)"/>
+    <circle cx="50" cy="40" r="6" fill="#61DAFB"/>
+    <text x="50" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">React Native</text>
+  </g>
+  
+  <!-- iOS Phone Mockup -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="80" height="140" fill="#1E1E1E" rx="8"/>
+    <rect x="5" y="15" width="70" height="110" fill="#000000" rx="4"/>
+    
+    <!-- iOS Status Bar -->
+    <rect x="5" y="15" width="70" height="12" fill="#FFFFFF" opacity="0.1"/>
+    <text x="10" y="23" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">9:41 AM</text>
+    <text x="65" y="23" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">100%</text>
+    
+    <!-- App Content -->
+    <rect x="10" y="35" width="60" height="15" fill="#61DAFB" rx="2"/>
+    <text x="40" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Header</text>
+    
+    <rect x="10" y="55" width="28" height="30" fill="#F0F0F0" rx="2"/>
+    <rect x="42" y="55" width="28" height="30" fill="#F0F0F0" rx="2"/>
+    
+    <rect x="10" y="90" width="60" height="25" fill="#61DAFB" rx="2"/>
+    <text x="40" y="105" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Button</text>
+    
+    <!-- iOS Home Indicator -->
+    <rect x="30" y="120" width="20" height="2" fill="#FFFFFF" opacity="0.5" rx="1"/>
+  </g>
+  
+  <!-- Android Phone Mockup -->
+  <g transform="translate(200, 100)">
+    <rect x="0" y="0" width="80" height="140" fill="#2E7D32" rx="8"/>
+    <rect x="5" y="10" width="70" height="115" fill="#000000" rx="4"/>
+    
+    <!-- Android Status Bar -->
+    <rect x="5" y="10" width="70" height="12" fill="#FFFFFF" opacity="0.1"/>
+    <text x="10" y="18" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">9:41</text>
+    <text x="65" y="18" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">🔋</text>
+    
+    <!-- App Content -->
+    <rect x="10" y="30" width="60" height="15" fill="#4CAF50" rx="2"/>
+    <text x="40" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">AppBar</text>
+    
+    <rect x="10" y="50" width="28" height="30" fill="#F0F0F0" rx="2"/>
+    <rect x="42" y="50" width="28" height="30" fill="#F0F0F0" rx="2"/>
+    
+    <rect x="10" y="85" width="60" height="25" fill="#4CAF50" rx="2"/>
+    <text x="40" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">FAB</text>
+    
+    <!-- Android Navigation -->
+    <rect x="25" y="120" width="30" height="3" fill="#FFFFFF" opacity="0.5" rx="1"/>
+  </g>
+  
+  <!-- Cross-Platform Code -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="140" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#61DAFB" font-family="monospace" font-size="12" font-weight="bold">Cross-Platform Code</text>
+    
+    <!-- Code example -->
+    <text x="10" y="40" fill="#C678DD" font-family="monospace" font-size="10">import</text>
+    <text x="40" y="40" fill="#E06C75" font-family="monospace" font-size="10">React</text>
+    <text x="70" y="40" fill="#C678DD" font-family="monospace" font-size="10">from</text>
+    <text x="95" y="40" fill="#98C379" font-family="monospace" font-size="10">'react';</text>
+    
+    <text x="10" y="55" fill="#C678DD" font-family="monospace" font-size="10">import</text>
+    <text x="40" y="55" fill="#E06C75" font-family="monospace" font-size="10">{</text>
+    <text x="50" y="55" fill="#61DAFB" font-family="monospace" font-size="10">View</text>
+    <text x="75" y="55" fill="#E06C75" font-family="monospace" font-size="10">,</text>
+    <text x="85" y="55" fill="#61DAFB" font-family="monospace" font-size="10">Text</text>
+    <text x="110" y="55" fill="#E06C75" font-family="monospace" font-size="10">,</text>
+    <text x="120" y="55" fill="#61DAFB" font-family="monospace" font-size="10">Button</text>
+    <text x="155" y="55" fill="#E06C75" font-family="monospace" font-size="10">}</text>
+    <text x="165" y="55" fill="#C678DD" font-family="monospace" font-size="10">from</text>
+    <text x="185" y="55" fill="#98C379" font-family="monospace" font-size="10">'react-native';</text>
+    
+    <text x="10" y="75" fill="#C678DD" font-family="monospace" font-size="10">const</text>
+    <text x="35" y="75" fill="#61DAFB" font-family="monospace" font-size="10">App</text>
+    <text x="50" y="75" fill="#D19A66" font-family="monospace" font-size="10">=</text>
+    <text x="55" y="75" fill="#C678DD" font-family="monospace" font-size="10">()</text>
+    <text x="60" y="75" fill="#D19A66" font-family="monospace" font-size="10">=&gt;</text>
+    
+    <text x="10" y="90" fill="#56B6C2" font-family="monospace" font-size="10">return</text>
+    <text x="45" y="90" fill="#E06C75" font-family="monospace" font-size="10">(</text>
+    <text x="50" y="90" fill="#E06C75" font-family="monospace" font-size="10">&lt;View&gt;</text>
+    
+    <text x="60" y="105" fill="#E06C75" font-family="monospace" font-size="10">&lt;Text&gt;</text>
+    <text x="85" y="105" fill="#98C379" font-family="monospace" font-size="10">Hello World!</text>
+    <text x="145" y="105" fill="#E06C75" font-family="monospace" font-size="10">&lt;/Text&gt;</text>
+    
+    <text x="60" y="120" fill="#E06C75" font-family="monospace" font-size="10">&lt;/View&gt;</text>
+    <text x="45" y="120" fill="#E06C75" font-family="monospace" font-size="10">)</text>
+    
+    <text x="10" y="135" fill="#C678DD" font-family="monospace" font-size="10">;</text>
+  </g>
+  
+  <!-- Components -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="180" height="140" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="90" y="20" text-anchor="middle" fill="#61DAFB" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Native Components</text>
+    
+    <!-- Component boxes -->
+    <rect x="10" y="35" width="70" height="25" fill="#61DAFB" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">View</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#4CAF50" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Text</text>
+    
+    <rect x="10" y="65" width="70" height="25" fill="#FF9800" rx="3"/>
+    <text x="45" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Image</text>
+    
+    <rect x="90" y="65" width="70" height="25" fill="#9C27B0" rx="3"/>
+    <text x="125" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ScrollView</text>
+    
+    <rect x="10" y="95" width="70" height="25" fill="#2196F3" rx="3"/>
+    <text x="45" y="112" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">TextInput</text>
+    
+    <rect x="90" y="95" width="70" height="25" fill="#F44336" rx="3"/>
+    <text x="125" y="112" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">TouchableOpacity</text>
+  </g>
+  
+  <!-- Platform Features -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#61DAFB" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Platform Features</text>
+    
+    <!-- iOS Features -->
+    <rect x="10" y="35" width="100" height="25" fill="#007AFF" rx="3"/>
+    <text x="60" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">iOS Native</text>
+    
+    <rect x="120" y="35" width="100" height="25" fill="#4CAF50" rx="3"/>
+    <text x="170" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Android Native</text>
+    
+    <!-- Feature list -->
+    <text x="10" y="75" fill="#666666" font-family="monospace" font-size="9">• Camera, GPS, Notifications</text>
+    <text x="10" y="90" fill="#666666" font-family="monospace" font-size="9">• File System, Bluetooth</text>
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">• Biometric Authentication</text>
+  </g>
+  
+  <!-- Development Tools -->
+  <g transform="translate(380, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#61DAFB" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Development Tools</text>
+    
+    <!-- Tool boxes -->
+    <rect x="10" y="35" width="70" height="25" fill="#61DAFB" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Expo</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Metro</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#4ECDC4" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Flipper</text>
+    
+    <!-- Commands -->
+    <text x="10" y="75" fill="#666666" font-family="monospace" font-size="9">npx react-native init MyApp</text>
+    <text x="10" y="90" fill="#666666" font-family="monospace" font-size="9">npx react-native run-ios</text>
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">npx react-native run-android</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">React Native Development</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Build Cross-Platform Mobile Apps</text>
+</svg>

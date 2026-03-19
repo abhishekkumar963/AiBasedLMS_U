@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7931E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- CI/CD Title -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">CI/CD</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Pipeline Mastery</text>
+  </g>
+  
+  <!-- Pipeline Flow -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Pipeline Flow</text>
+    
+    <!-- Pipeline stages -->
+    <rect x="10" y="35" width="35" height="25" fill="#FF6B35" rx="3"/>
+    <text x="27" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Code</text>
+    <text x="27" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Commit</text>
+    
+    <path d="M 45 47 L 65 47" stroke="#FF6B35" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    
+    <rect x="65" y="35" width="35" height="25" fill="#F7931E" rx="3"/>
+    <text x="82" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Build</text>
+    <text x="82" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Test</text>
+    
+    <path d="M 100 47 L 120 47" stroke="#FF6B35" stroke-width="2" marker-end="url(#arrow-orange)"/>
+    
+    <rect x="120" y="35" width="35" height="25" fill="#FF6B35" rx="3"/>
+    <text x="137" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Deploy</text>
+    <text x="137" y="56" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Release</text>
+    
+    <!-- Status indicators -->
+    <circle cx="27" cy="75" r="5" fill="#00C851"/>
+    <text x="27" y="90" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Success</text>
+    
+    <circle cx="82" cy="75" r="5" fill="#00C851"/>
+    <text x="82" y="90" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Success</text>
+    
+    <circle cx="137" cy="75" r="5" fill="#00C851"/>
+    <text x="137" y="90" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="8">Success</text>
+    
+    <!-- Pipeline info -->
+    <text x="100" y="110" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Automated Workflow</text>
+  </g>
+  
+  <!-- CI/CD Tools -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CI/CD Tools</text>
+    
+    <!-- Tool boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Jenkins</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">GitHub Actions</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">GitLab CI</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Azure DevOps</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#FF6B35" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">CircleCI</text>
+  </g>
+  
+  <!-- Pipeline Configuration -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Pipeline Config</text>
+    
+    <!-- YAML content -->
+    <text x="10" y="40" fill="#E06C75" font-family="monospace" font-size="10">name:</text>
+    <text x="40" y="40" fill="#98C379" font-family="monospace" font-size="10">CI/CD Pipeline</text>
+    
+    <text x="10" y="52" fill="#E06C75" font-family="monospace" font-size="10">on:</text>
+    <text x="25" y="64" fill="#61DAFB" font-family="monospace" font-size="10">push:</text>
+    <text x="55" y="64" fill="#98C379" font-family="monospace" font-size="10">main</text>
+    
+    <text x="10" y="76" fill="#E06C75" font-family="monospace" font-size="10">jobs:</text>
+    <text x="20" y="88" fill="#61DAFB" font-family="monospace" font-size="10">build:</text>
+    <text x="45" y="88" fill="#E06C75" font-family="monospace" font-size="10">runs-on:</text>
+    <text x="85" y="88" fill="#98C379" font-family="monospace" font-size="10">ubuntu-latest</text>
+    
+    <text x="30" y="100" fill="#61DAFB" font-family="monospace" font-size="10">steps:</text>
+    <text x="40" y="112" fill="#98C379" font-family="monospace" font-size="10">- uses: actions/checkout@v2</text>
+  </g>
+  
+  <!-- Testing Strategies -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Testing Strategies</text>
+    
+    <!-- Test types -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Unit Tests</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Integration</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">E2E Tests</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Performance</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Automated Testing Suite</text>
+  </g>
+  
+  <!-- Deployment Strategies -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Deployment</text>
+    
+    <!-- Strategy boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Blue-Green</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Canary</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Rolling</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Feature Flags</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Zero-Downtime Deployment</text>
+  </g>
+  
+  <!-- Monitoring & Feedback -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B35" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Monitoring</text>
+    
+    <!-- Monitoring tools -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Prometheus</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Grafana</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B35" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ELK Stack</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#F7931E" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Sentry</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Real-time Monitoring</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6B35"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">CI/CD Pipeline Mastery</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Automated Build, Test & Deploy</text>
+</svg>

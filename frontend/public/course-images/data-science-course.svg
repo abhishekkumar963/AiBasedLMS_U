@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chart" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Bar chart -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="80" width="30" height="40" fill="#10B981" opacity="0.8"/>
+    <rect x="40" y="60" width="30" height="60" fill="#3B82F6" opacity="0.8"/>
+    <rect x="80" y="40" width="30" height="80" fill="#8B5CF6" opacity="0.8"/>
+    <rect x="120" y="20" width="30" height="100" fill="#EC4899" opacity="0.8"/>
+    <rect x="160" y="50" width="30" height="70" fill="#F59E0B" opacity="0.8"/>
+    <rect x="200" y="30" width="30" height="90" fill="#EF4444" opacity="0.8"/>
+    
+    <!-- Chart base -->
+    <line x1="0" y1="120" x2="240" y2="120" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Pie chart -->
+  <g transform="translate(500, 200)">
+    <circle cx="0" cy="0" r="60" fill="#10B981" opacity="0.8"/>
+    <path d="M 0 0 L 60 0 A 60 60 0 0 1 18.54 57.06 Z" fill="#3B82F6" opacity="0.8"/>
+    <path d="M 0 0 L 18.54 57.06 A 60 60 0 0 1 -48.54 35.27 Z" fill="#8B5CF6" opacity="0.8"/>
+    <path d="M 0 0 L -48.54 35.27 A 60 60 0 0 1 -48.54 -35.27 Z" fill="#EC4899" opacity="0.8"/>
+    <path d="M 0 0 L -48.54 -35.27 A 60 60 0 0 1 60 0 Z" fill="#F59E0B" opacity="0.8"/>
+  </g>
+  
+  <!-- Python logo representation -->
+  <g transform="translate(200, 120)">
+    <text x="0" y="0" text-anchor="middle" fill="#3776AB" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Python</text>
+    <text x="0" y="25" text-anchor="middle" fill="#FFD43B" font-family="Arial, sans-serif" font-size="20">🐍</text>
+  </g>
+  
+  <!-- Neural network representation -->
+  <g transform="translate(650, 100)">
+    <!-- Input layer -->
+    <circle cx="0" cy="0" r="8" fill="#10B981" opacity="0.8"/>
+    <circle cx="0" cy="30" r="8" fill="#10B981" opacity="0.8"/>
+    <circle cx="0" cy="60" r="8" fill="#10B981" opacity="0.8"/>
+    
+    <!-- Hidden layer -->
+    <circle cx="40" cy="15" r="8" fill="#3B82F6" opacity="0.8"/>
+    <circle cx="40" cy="45" r="8" fill="#3B82F6" opacity="0.8"/>
+    
+    <!-- Output layer -->
+    <circle cx="80" cy="30" r="8" fill="#8B5CF6" opacity="0.8"/>
+    
+    <!-- Connections -->
+    <line x1="0" y1="0" x2="40" y2="15" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="0" x2="40" y2="45" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="30" x2="40" y2="15" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="30" x2="40" y2="45" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="60" x2="40" y2="15" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="60" x2="40" y2="45" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="40" y1="15" x2="80" y2="30" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+    <line x1="40" y1="45" x2="80" y2="30" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Data points -->
+  <circle cx="120" cy="80" r="3" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="140" cy="75" r="4" fill="#34D399" opacity="0.8"/>
+  <circle cx="160" cy="85" r="3" fill="#F87171" opacity="0.8"/>
+  
+  <circle cx="600" cy="320" r="3" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="620" cy="315" r="4" fill="#34D399" opacity="0.8"/>
+  <circle cx="640" cy="325" r="3" fill="#F87171" opacity="0.8"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Data Science</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="410" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Analyze Data & Build ML Models</text>
+</svg>

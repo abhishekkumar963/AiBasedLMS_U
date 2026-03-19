@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#326CE5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5C8DE6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#326CE5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Kubernetes Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Kubernetes wheel -->
+    <circle cx="50" cy="40" r="25" fill="#326CE5" opacity="0.9"/>
+    <circle cx="50" cy="40" r="15" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="50" cy="40" r="8" fill="#326CE5"/>
+    
+    <!-- Spokes -->
+    <line x1="50" y1="15" x2="50" y2="25" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="75" y1="40" x2="65" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="50" y1="65" x2="50" y2="55" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="25" y1="40" x2="35" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+    
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Kubernetes</text>
+  </g>
+  
+  <!-- Cluster Architecture -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Cluster Architecture</text>
+    
+    <!-- Master Node -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    <rect x="15" y="40" width="170" height="10" fill="#326CE5" opacity="0.8"/>
+    <text x="100" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Master Node</text>
+    
+    <!-- Master components -->
+    <rect x="20" y="55" width="40" height="8" fill="#5C8DE6" opacity="0.8"/>
+    <text x="40" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">API Server</text>
+    
+    <rect x="65" y="55" width="40" height="8" fill="#326CE5" opacity="0.8"/>
+    <text x="85" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Scheduler</text>
+    
+    <rect x="110" y="55" width="40" height="8" fill="#5C8DE6" opacity="0.8"/>
+    <text x="130" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Controller</text>
+    
+    <rect x="155" y="55" width="25" height="8" fill="#326CE5" opacity="0.8"/>
+    <text x="167" y="61" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">etcd</text>
+    
+    <!-- Worker nodes -->
+    <rect x="20" y="70" width="35" height="25" fill="#5C8DE6" rx="2"/>
+    <text x="37" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Worker</text>
+    <text x="37" y="88" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="5">Node 1</text>
+    
+    <rect x="60" y="70" width="35" height="25" fill="#326CE5" rx="2"/>
+    <text x="77" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Worker</text>
+    <text x="77" y="88" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="5">Node 2</text>
+    
+    <rect x="100" y="70" width="35" height="25" fill="#5C8DE6" rx="2"/>
+    <text x="117" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Worker</text>
+    <text x="117" y="88" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="5">Node 3</text>
+    
+    <rect x="140" y="70" width="35" height="25" fill="#326CE5" rx="2"/>
+    <text x="157" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Worker</text>
+    <text x="157" y="88" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="5">Node N</text>
+  </g>
+  
+  <!-- Kubernetes Objects -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Kubernetes Objects</text>
+    
+    <!-- Object boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Pod</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Service</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Deployment</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ConfigMap</text>
+    
+    <rect x="10" y="95" width="85" height="20" fill="#326CE5" rx="3"/>
+    <text x="52" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Secret</text>
+    
+    <rect x="105" y="95" width="85" height="20" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Ingress</text>
+  </g>
+  
+  <!-- kubectl Commands -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">kubectl Commands</text>
+    
+    <!-- Command examples -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">kubectl get pods</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">kubectl apply -f deployment.yaml</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">kubectl scale deployment app --replicas=3</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">kubectl expose deployment app --port=80</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">kubectl logs pod-name</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">kubectl exec -it pod-name -- bash</text>
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">kubectl delete service app-service</text>
+  </g>
+  
+  <!-- YAML Manifest -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">YAML Manifest</text>
+    
+    <!-- YAML content -->
+    <text x="10" y="40" fill="#E06C75" font-family="monospace" font-size="10">apiVersion:</text>
+    <text x="65" y="40" fill="#98C379" font-family="monospace" font-size="10">apps/v1</text>
+    
+    <text x="10" y="52" fill="#E06C75" font-family="monospace" font-size="10">kind:</text>
+    <text x="40" y="52" fill="#98C379" font-family="monospace" font-size="10">Deployment</text>
+    
+    <text x="10" y="64" fill="#E06C75" font-family="monospace" font-size="10">metadata:</text>
+    <text x="20" y="76" fill="#61DAFB" font-family="monospace" font-size="10">name:</text>
+    <text x="45" y="76" fill="#98C379" font-family="monospace" font-size="10">myapp</text>
+    
+    <text x="10" y="88" fill="#E06C75" font-family="monospace" font-size="10">spec:</text>
+    <text x="20" y="100" fill="#61DAFB" font-family="monospace" font-size="10">replicas:</text>
+    <text x="65" y="100" fill="#D19A66" font-family="monospace" font-size="10">3</text>
+    
+    <text x="20" y="112" fill="#61DAFB" font-family="monospace" font-size="10">selector:</text>
+    <text x="65" y="112" fill="#98C379" font-family="monospace" font-size="10">app: myapp</text>
+  </g>
+  
+  <!-- Service Types -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Service Types</text>
+    
+    <!-- Service type boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ClusterIP</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">NodePort</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">LoadBalancer</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ExternalName</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">Network Communication</text>
+  </g>
+  
+  <!-- Cloud Providers -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#326CE5" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Cloud Providers</text>
+    
+    <!-- Provider boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">GKE</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">EKS</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#326CE5" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">AKS</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#5C8DE6" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">DigitalOcean</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#326CE5" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">On-Premise</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Kubernetes Orchestration</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Container Orchestration Platform</text>
+</svg>

@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#02569B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0175C2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#02569B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Flutter Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Flutter logo shape -->
+    <path d="M 30 20 L 50 35 L 30 50 L 10 35 Z" fill="#02569B" opacity="0.9"/>
+    <path d="M 50 35 L 70 50 L 50 65 L 30 50 Z" fill="#0175C2" opacity="0.9"/>
+    <path d="M 30 50 L 50 65 L 30 80 L 10 65 Z" fill="#02569B" opacity="0.9"/>
+    <text x="40" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Flutter</text>
+  </g>
+  
+  <!-- Dart Language -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="120" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="60" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Dart Language</text>
+    
+    <!-- Dart code -->
+    <text x="10" y="40" fill="#C678DD" font-family="monospace" font-size="9">import</text>
+    <text x="35" y="40" fill="#E06C75" font-family="monospace" font-size="9">'package:flutter/material.dart';</text>
+    
+    <text x="10" y="55" fill="#C678DD" font-family="monospace" font-size="9">void</text>
+    <text x="30" y="55" fill="#61DAFB" font-family="monospace" font-size="9">main</text>
+    <text x="50" y="55" fill="#D19A66" font-family="monospace" font-size="9">()</text>
+    <text x="55" y="55" fill="#D19A66" font-family="monospace" font-size="9">=&gt;</text>
+    
+    <text x="10" y="70" fill="#56B6C2" font-family="monospace" font-size="9">runApp</text>
+    <text x="40" y="70" fill="#E06C75" font-family="monospace" font-size="9">(</text>
+    <text x="45" y="70" fill="#61DAFB" font-family="monospace" font-size="9">MyApp</text>
+    <text x="75" y="70" fill="#E06C75" font-family="monospace" font-size="9">());</text>
+    
+    <text x="10" y="85" fill="#C678DD" font-family="monospace" font-size="9">class</text>
+    <text x="35" y="85" fill="#61DAFB" font-family="monospace" font-size="9">MyApp</text>
+    <text x="55" y="85" fill="#C678DD" font-family="monospace" font-size="9">extends</text>
+    <text x="85" y="85" fill="#61DAFB" font-family="monospace" font-size="9">StatelessWidget</text>
+    
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="8">// Strongly typed, compiled</text>
+  </g>
+  
+  <!-- Widget Tree -->
+  <g transform="translate(240, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Widget Tree</text>
+    
+    <!-- Tree structure -->
+    <rect x="50" y="30" width="40" height="15" fill="#02569B" rx="2"/>
+    <text x="70" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">MaterialApp</text>
+    
+    <line x1="70" y1="45" x2="70" y2="55" stroke="#02569B" stroke-width="2"/>
+    
+    <rect x="30" y="55" width="30" height="15" fill="#0175C2" rx="2"/>
+    <text x="45" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Scaffold</text>
+    
+    <line x1="45" y1="70" x2="45" y2="80" stroke="#0175C2" stroke-width="2"/>
+    
+    <rect x="20" y="80" width="25" height="12" fill="#02569B" rx="2"/>
+    <text x="32" y="89" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">AppBar</text>
+    
+    <rect x="50" y="80" width="25" height="12" fill="#0175C2" rx="2"/>
+    <text x="62" y="89" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Body</text>
+    
+    <rect x="80" y="80" width="25" height="12" fill="#02569B" rx="2"/>
+    <text x="92" y="89" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">FAB</text>
+    
+    <text x="70" y="110" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Everything is a Widget</text>
+  </g>
+  
+  <!-- Material Design -->
+  <g transform="translate(400, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Material Design</text>
+    
+    <!-- Material components -->
+    <rect x="10" y="35" width="120" height="25" fill="#02569B" rx="3"/>
+    <text x="70" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">AppBar</text>
+    
+    <rect x="10" y="65" width="55" height="20" fill="#0175C2" rx="3"/>
+    <text x="37" y="78" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">ElevatedButton</text>
+    
+    <rect x="75" y="65" width="55" height="20" fill="#02569B" rx="3"/>
+    <text x="102" y="78" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">TextButton</text>
+    
+    <rect x="10" y="90" width="55" height="20" fill="#0175C2" rx="3"/>
+    <text x="37" y="103" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Card</text>
+    
+    <rect x="75" y="90" width="55" height="20" fill="#02569B" rx="3"/>
+    <text x="102" y="103" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Chip</text>
+  </g>
+  
+  <!-- Hot Reload -->
+  <g transform="translate(560, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Hot Reload</text>
+    
+    <!-- Reload animation -->
+    <circle cx="70" cy="50" r="20" fill="#02569B" opacity="0.2"/>
+    <path d="M 70 30 A 20 20 0 1 1 50 50" fill="none" stroke="#02569B" stroke-width="3"/>
+    <polygon points="48,48 52,52 48,56" fill="#02569B"/>
+    
+    <text x="70" y="85" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="10">Instant Updates</text>
+    <text x="70" y="100" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="10">State Preserved</text>
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-size="10">Fast Development</text>
+  </g>
+  
+  <!-- Performance -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Performance</text>
+    
+    <!-- Performance metrics -->
+    <rect x="10" y="35" width="80" height="25" fill="#02569B" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">60 FPS</text>
+    
+    <rect x="100" y="35" width="80" height="25" fill="#0175C2" rx="3"/>
+    <text x="140" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Native ARM</text>
+    
+    <!-- Features -->
+    <text x="10" y="75" fill="#666666" font-family="monospace" font-size="9">• Compiled to ARM/JavaScript</text>
+    <text x="10" y="90" fill="#666666" font-family="monospace" font-size="9">• Skia rendering engine</text>
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">• Platform-specific optimizations</text>
+  </g>
+  
+  <!-- Development Tools -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#02569B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Dev Tools</text>
+    
+    <!-- Tool boxes -->
+    <rect x="10" y="35" width="80" height="25" fill="#02569B" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Flutter CLI</text>
+    
+    <rect x="100" y="35" width="80" height="25" fill="#0175C2" rx="3"/>
+    <text x="140" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Android Studio</text>
+    
+    <rect x="10" y="65" width="80" height="25" fill="#02569B" rx="3"/>
+    <text x="50" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">VS Code</text>
+    
+    <rect x="100" y="65" width="80" height="25" fill="#0175C2" rx="3"/>
+    <text x="140" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">DevTools</text>
+    
+    <!-- Commands -->
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">flutter run --hot</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Flutter Mobile Development</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Beautiful Native Apps with Dart</text>
+</svg>

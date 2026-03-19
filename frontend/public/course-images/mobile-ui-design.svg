@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF8787;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Mobile UI Devices -->
+  <g transform="translate(350, 120)">
+    <!-- iOS device -->
+    <rect x="20" y="20" width="25" height="45" fill="#1D1D1F" rx="5"/>
+    <rect x="22" y="23" width="21" height="36" fill="#000000" rx="3"/>
+    <rect x="25" y="26" width="15" height="25" fill="#FF6B6B" rx="2"/>
+    <text x="32" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">UI</text>
+    
+    <!-- Android device -->
+    <rect x="55" y="20" width="25" height="45" fill="#3DDC84" rx="5"/>
+    <rect x="57" y="23" width="21" height="36" fill="#000000" rx="3"/>
+    <rect x="60" y="26" width="15" height="25" fill="#FF6B6B" rx="2"/>
+    <text x="67" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">UX</text>
+    
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Mobile UI Design</text>
+    <text x="50" y="95" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Cross-Platform Design</text>
+  </g>
+  
+  <!-- Design Principles -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Design Principles</text>
+    
+    <!-- Principle boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Consistency</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Hierarchy</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Feedback</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Accessibility</text>
+    
+    <text x="100" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">User-Centered Design</text>
+  </g>
+  
+  <!-- Design Tools -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Design Tools</text>
+    
+    <!-- Tool boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Figma</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Sketch</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Adobe XD</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Framer</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#FF6B6B" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">InVision</text>
+  </g>
+  
+  <!-- UI Components -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">UI Components</text>
+    
+    <!-- Component visualization -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Header -->
+    <rect x="15" y="40" width="170" height="12" fill="#FF6B6B" rx="2"/>
+    <text x="100" y="48" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Navigation Header</text>
+    
+    <!-- Buttons -->
+    <rect x="20" y="58" width="30" height="15" fill="#FF8787" rx="3"/>
+    <text x="35" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Button</text>
+    
+    <rect x="55" y="58" width="30" height="15" fill="#FF6B6B" rx="3"/>
+    <text x="70" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Primary</text>
+    
+    <rect x="90" y="58" width="30" height="15" fill="#FF8787" rx="3"/>
+    <text x="105" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Secondary</text>
+    
+    <!-- Input -->
+    <rect x="125" y="58" width="50" height="15" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="1" rx="2"/>
+    <text x="150" y="68" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="6">Input Field</text>
+    
+    <!-- Cards -->
+    <rect x="20" y="78" width="40" height="20" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="1" rx="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="6">Card</text>
+    
+    <rect x="65" y="78" width="40" height="20" fill="#FFFFFF" stroke="#FF8787" stroke-width="1" rx="2"/>
+    <text x="85" y="90" text-anchor="middle" fill="#FF8787" font-family="Arial, sans-serif" font-size="6">List</text>
+    
+    <rect x="110" y="78" width="40" height="20" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="1" rx="2"/>
+    <text x="130" y="90" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="6">Modal</text>
+    
+    <rect x="155" y="78" width="25" height="20" fill="#FFFFFF" stroke="#FF8787" stroke-width="1" rx="2"/>
+    <text x="167" y="90" text-anchor="middle" fill="#FF8787" font-family="Arial, sans-serif" font-size="6">Tab</text>
+  </g>
+  
+  <!-- Responsive Design -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Responsive Design</text>
+    
+    <!-- Device sizes -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Phone -->
+    <rect x="15" y="45" width="20" height="35" fill="#FF6B6B" rx="3"/>
+    <text x="25" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Mobile</text>
+    
+    <!-- Tablet -->
+    <rect x="40" y="50" width="40" height="25" fill="#FF8787" rx="3"/>
+    <text x="60" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Tablet</text>
+    
+    <!-- Desktop -->
+    <rect x="85" y="55" width="80" height="15" fill="#FF6B6B" rx="3"/>
+    <text x="125" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Desktop</text>
+    
+    <!-- Breakpoints -->
+    <text x="25" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">320px</text>
+    <text x="60" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">768px</text>
+    <text x="125" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">1024px</text>
+  </g>
+  
+  <!-- Gestures -->
+  <g transform="translate(320, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Touch Gestures</text>
+    
+    <!-- Gesture boxes -->
+    <rect x="10" y="35" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Tap</text>
+    
+    <rect x="105" y="35" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Swipe</text>
+    
+    <rect x="10" y="65" width="85" height="25" fill="#FF6B6B" rx="3"/>
+    <text x="52" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Pinch</text>
+    
+    <rect x="105" y="65" width="85" height="25" fill="#FF8787" rx="3"/>
+    <text x="147" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Long Press</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#FF6B6B" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Drag & Drop</text>
+  </g>
+  
+  <!-- Prototyping -->
+  <g transform="translate(540, 280)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Prototyping</text>
+    
+    <!-- Prototype stages -->
+    <rect x="10" y="35" width="180" height="70" fill="#F5F5F5" rx="4"/>
+    
+    <!-- Wireframe -->
+    <rect x="15" y="40" width="50" height="20" fill="#FF6B6B" opacity="0.3" rx="2"/>
+    <text x="40" y="53" text-anchor="middle" fill="#FF6B6B" font-family="Arial, sans-serif" font-size="7">Wireframe</text>
+    
+    <!-- Mockup -->
+    <rect x="70" y="40" width="50" height="20" fill="#FF8787" opacity="0.5" rx="2"/>
+    <text x="95" y="53" text-anchor="middle" fill="#FF8787" font-family="Arial, sans-serif" font-size="7">Mockup</text>
+    
+    <!-- Prototype -->
+    <rect x="125" y="40" width="60" height="20" fill="#FF6B6B" opacity="0.8" rx="2"/>
+    <text x="155" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="7">Prototype</text>
+    
+    <!-- User testing -->
+    <rect x="40" y="70" width="120" height="25" fill="#FF8787" rx="3"/>
+    <text x="100" y="87" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">User Testing</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Mobile UI Design</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Cross-Platform Mobile Design</text>
+</svg>

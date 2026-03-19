@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#68A063;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Express Logo -->
+  <g transform="translate(350, 140)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Express</text>
+    <text x="50" y="65" text-anchor="middle" fill="#68A063" font-family="Arial, sans-serif" font-size="14">Node.js Framework</text>
+  </g>
+  
+  <!-- Server representation -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="150" fill="#1E1E1E" rx="6"/>
+    <rect x="0" y="0" width="200" height="25" fill="#2D2D30" rx="6"/>
+    
+    <!-- Server status -->
+    <circle cx="15" cy="12" r="4" fill="#27C93F"/>
+    <text x="25" y="17" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Server Running</text>
+    
+    <!-- API endpoints -->
+    <text x="10" y="50" fill="#569CD6" font-family="monospace" font-size="11">app.get('/', (req, res) => {</text>
+    <text x="20" y="70" fill="#D4D4D4" font-family="monospace" font-size="10">res.json({ message: 'Hello World' });</text>
+    <text x="10" y="85" fill="#D4D4D4" font-family="monospace" font-size="10">});</text>
+    
+    <text x="10" y="105" fill="#569CD6" font-family="monospace" font-size="11">app.post('/users', (req, res) => {</text>
+    <text x="20" y="125" fill="#D4D4D4" font-family="monospace" font-size="10">// Create new user</text>
+    <text x="10" y="140" fill="#D4D4D4" font-family="monospace" font-size="10">});</text>
+  </g>
+  
+  <!-- HTTP Methods -->
+  <g transform="translate(350, 250)">
+    <rect x="0" y="0" width="300" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="150" y="20" text-anchor="middle" fill="#68A063" font-family="Arial, sans-serif" font-size="14" font-weight="bold">RESTful API Methods</text>
+    
+    <!-- GET -->
+    <rect x="20" y="35" width="50" height="25" fill="#61DAFB" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">GET</text>
+    
+    <!-- POST -->
+    <rect x="80" y="35" width="50" height="25" fill="#4CAF50" rx="3"/>
+    <text x="105" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">POST</text>
+    
+    <!-- PUT -->
+    <rect x="140" y="35" width="50" height="25" fill="#FF9800" rx="3"/>
+    <text x="165" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PUT</text>
+    
+    <!-- DELETE -->
+    <rect x="200" y="35" width="50" height="25" fill="#F44336" rx="3"/>
+    <text x="225" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">DELETE</text>
+    
+    <!-- Description -->
+    <text x="20" y="80" fill="#666666" font-family="Arial, sans-serif" font-size="10">Retrieve data</text>
+    <text x="80" y="80" fill="#666666" font-family="Arial, sans-serif" font-size="10">Create data</text>
+    <text x="140" y="80" fill="#666666" font-family="Arial, sans-serif" font-size="10">Update data</text>
+    <text x="200" y="80" fill="#666666" font-family="Arial, sans-serif" font-size="10">Delete data</text>
+    
+    <!-- Middleware -->
+    <text x="150" y="105" text-anchor="middle" fill="#68A063" font-family="monospace" font-size="10">app.use(cors()); app.use(express.json());</text>
+  </g>
+  
+  <!-- Request/Response flow -->
+  <g transform="translate(100, 320)">
+    <rect x="0" y="0" width="200" height="60" fill="#FFFFFF" opacity="0.8" rx="4"/>
+    
+    <!-- Client -->
+    <rect x="10" y="15" width="40" height="30" fill="#61DAFB" rx="2"/>
+    <text x="30" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Client</text>
+    
+    <!-- Arrow -->
+    <path d="M 55 30 L 90 30" stroke="#68A063" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="72" y="25" fill="#68A063" font-family="Arial, sans-serif" font-size="8">Request</text>
+    
+    <!-- Server -->
+    <rect x="95" y="15" width="40" height="30" fill="#68A063" rx="2"/>
+    <text x="115" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Server</text>
+    
+    <!-- Arrow back -->
+    <path d="M 135 30 L 100 30" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowhead2)"/>
+    <text x="105" y="45" fill="#4CAF50" font-family="Arial, sans-serif" font-size="8">Response</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#68A063"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Express.js Backend</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Build Robust RESTful APIs</text>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F77B4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF7F0E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2CA02C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Matplotlib Logo -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Matplotlib</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Data Visualization</text>
+  </g>
+  
+  <!-- Line Chart -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#1F77B4" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Line Chart</text>
+    
+    <!-- Chart area -->
+    <rect x="10" y="30" width="120" height="70" fill="#F5F5F5" rx="2"/>
+    
+    <!-- Grid lines -->
+    <line x1="10" y1="50" x2="130" y2="50" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="10" y1="70" x2="130" y2="70" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="10" y1="90" x2="130" y2="90" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <!-- Line plot -->
+    <polyline points="20,80 40,60 60,70 80,40 100,50 120,30" fill="none" stroke="#1F77B4" stroke-width="2"/>
+    
+    <!-- Data points -->
+    <circle cx="20" cy="80" r="3" fill="#1F77B4"/>
+    <circle cx="40" cy="60" r="3" fill="#1F77B4"/>
+    <circle cx="60" cy="70" r="3" fill="#1F77B4"/>
+    <circle cx="80" cy="40" r="3" fill="#1F77B4"/>
+    <circle cx="100" cy="50" r="3" fill="#1F77B4"/>
+    <circle cx="120" cy="30" r="3" fill="#1F77B4"/>
+    
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">plt.plot(x, y)</text>
+  </g>
+  
+  <!-- Bar Chart -->
+  <g transform="translate(260, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#FF7F0E" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Bar Chart</text>
+    
+    <!-- Chart area -->
+    <rect x="10" y="30" width="120" height="70" fill="#F5F5F5" rx="2"/>
+    
+    <!-- Bars -->
+    <rect x="20" y="70" width="15" height="30" fill="#FF7F0E"/>
+    <rect x="40" y="60" width="15" height="40" fill="#FF7F0E"/>
+    <rect x="60" y="50" width="15" height="50" fill="#FF7F0E"/>
+    <rect x="80" y="65" width="15" height="35" fill="#FF7F0E"/>
+    <rect x="100" y="55" width="15" height="45" fill="#FF7F0E"/>
+    
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">plt.bar(x, height)</text>
+  </g>
+  
+  <!-- Scatter Plot -->
+  <g transform="translate(420, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#2CA02C" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Scatter Plot</text>
+    
+    <!-- Chart area -->
+    <rect x="10" y="30" width="120" height="70" fill="#F5F5F5" rx="2"/>
+    
+    <!-- Scatter points -->
+    <circle cx="25" cy="75" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="35" cy="60" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="45" cy="80" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="55" cy="50" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="65" cy="70" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="75" cy="45" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="85" cy="65" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="95" cy="55" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="105" cy="75" r="4" fill="#2CA02C" opacity="0.7"/>
+    <circle cx="115" cy="60" r="4" fill="#2CA02C" opacity="0.7"/>
+    
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">plt.scatter(x, y)</text>
+  </g>
+  
+  <!-- Pie Chart -->
+  <g transform="translate(580, 100)">
+    <rect x="0" y="0" width="140" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#D62728" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Pie Chart</text>
+    
+    <!-- Pie -->
+    <circle cx="70" cy="65" r="35" fill="#D62728" opacity="0.8"/>
+    <path d="M 70 65 L 70 30 A 35 35 0 0 1 95 47 Z" fill="#FF7F0E" opacity="0.8"/>
+    <path d="M 70 65 L 95 47 A 35 35 0 0 1 95 83 Z" fill="#2CA02C" opacity="0.8"/>
+    <path d="M 70 65 L 95 83 A 35 35 0 0 1 70 100 Z" fill="#1F77B4" opacity="0.8"/>
+    
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">plt.pie(sizes)</text>
+  </g>
+  
+  <!-- Seaborn Style Options -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#1F77B4" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Seaborn Styles</text>
+    
+    <!-- Style options -->
+    <rect x="10" y="35" width="70" height="25" fill="#1F77B4" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">whitegrid</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#FF7F0E" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">darkgrid</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#2CA02C" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">white</text>
+    
+    <!-- Code examples -->
+    <text x="10" y="80" fill="#666666" font-family="monospace" font-size="9">import seaborn as sns</text>
+    <text x="10" y="95" fill="#666666" font-family="monospace" font-size="9">sns.set_style("whitegrid")</text>
+    <text x="10" y="110" fill="#666666" font-family="monospace" font-size="9">sns.heatmap(data)</text>
+  </g>
+  
+  <!-- Advanced Plots -->
+  <g transform="translate(380, 250)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#FF7F0E" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Advanced Visualizations</text>
+    
+    <!-- Plot types -->
+    <rect x="10" y="35" width="70" height="25" fill="#D62728" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Heatmap</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#9467BD" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Box Plot</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#8C564B" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Violin</text>
+    
+    <!-- Code examples -->
+    <text x="10" y="80" fill="#666666" font-family="monospace" font-size="9">plt.subplot(2,2,1)</text>
+    <text x="10" y="95" fill="#666666" font-family="monospace" font-size="9">plt.hist(data, bins=20)</text>
+    <text x="10" y="110" fill="#666666" font-family="monospace" font-size="9">plt.show()</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Data Visualization</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Matplotlib & Seaborn Mastery</text>
+</svg>

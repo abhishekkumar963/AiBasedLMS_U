@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C853;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00E676;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00C853;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- OpenCV Logo -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="bold">OpenCV</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Computer Vision</text>
+  </g>
+  
+  <!-- Image Processing Pipeline -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#00C853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Image Pipeline</text>
+    
+    <!-- Pipeline steps -->
+    <rect x="10" y="35" width="40" height="30" fill="#00C853" rx="3"/>
+    <text x="30" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Input</text>
+    <text x="30" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">Image</text>
+    
+    <path d="M 50 50 L 70 50" stroke="#00C853" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <rect x="70" y="35" width="40" height="30" fill="#00E676" rx="3"/>
+    <text x="90" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Pre-</text>
+    <text x="90" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">process</text>
+    
+    <path d="M 110 50 L 130 50" stroke="#00C853" stroke-width="2" marker-end="url(#arrow-green)"/>
+    
+    <rect x="130" y="35" width="40" height="30" fill="#00C853" rx="3"/>
+    <text x="150" y="45" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="8">Process</text>
+    <text x="150" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="6">CV</text>
+    
+    <!-- Operations -->
+    <text x="10" y="80" fill="#666666" font-family="monospace" font-size="8">• Grayscale conversion</text>
+    <text x="10" y="92" fill="#666666" font-family="monospace" font-size="8">• Gaussian blur</text>
+    <text x="10" y="104" fill="#666666" font-family="monospace" font-size="8">• Edge detection</text>
+    <text x="110" y="80" fill="#666666" font-family="monospace" font-size="8">• Thresholding</text>
+    <text x="110" y="92" fill="#666666" font-family="monospace" font-size="8">• Contours</text>
+    <text x="110" y="104" fill="#666666" font-family="monospace" font-size="8">• Feature detection</text>
+  </g>
+  
+  <!-- Object Detection -->
+  <g transform="translate(320, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#00C853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Object Detection</text>
+    
+    <!-- Detection example -->
+    <rect x="10" y="35" width="180" height="60" fill="#F5F5F5" rx="3"/>
+    
+    <!-- Bounding boxes -->
+    <rect x="20" y="45" width="30" height="25" fill="none" stroke="#00C853" stroke-width="2"/>
+    <text x="35" y="40" text-anchor="middle" fill="#00C853" font-family="monospace" font-size="8">Person</text>
+    <text x="35" y="58" text-anchor="middle" fill="#00C853" font-family="monospace" font-size="6">0.95</text>
+    
+    <rect x="60" y="50" width="25" height="20" fill="none" stroke="#00E676" stroke-width="2"/>
+    <text x="72" y="45" text-anchor="middle" fill="#00E676" font-family="monospace" font-size="8">Car</text>
+    <text x="72" y="63" text-anchor="middle" fill="#00E676" font-family="monospace" font-size="6">0.87</text>
+    
+    <rect x="95" y="48" width="20" height="22" fill="none" stroke="#00C853" stroke-width="2"/>
+    <text x="105" y="43" text-anchor="middle" fill="#00C853" font-family="monospace" font-size="8">Dog</text>
+    <text x="105" y="61" text-anchor="middle" fill="#00C853" font-family="monospace" font-size="6">0.92</text>
+    
+    <rect x="125" y="55" width="35" height="15" fill="none" stroke="#00E676" stroke-width="2"/>
+    <text x="142" y="50" text-anchor="middle" fill="#00E676" font-family="monospace" font-size="8">Bicycle</text>
+    <text x="142" y="65" text-anchor="middle" fill="#00E676" font-family="monospace" font-size="6">0.78</text>
+    
+    <text x="100" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">cv2.dnn.readNetFromDarknet()</text>
+  </g>
+  
+  <!-- Feature Detection -->
+  <g transform="translate(540, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#00C853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Feature Detection</text>
+    
+    <!-- Feature types -->
+    <rect x="10" y="35" width="80" height="25" fill="#00C853" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SIFT</text>
+    
+    <rect x="100" y="35" width="80" height="25" fill="#00E676" rx="3"/>
+    <text x="140" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">SURF</text>
+    
+    <rect x="10" y="65" width="80" height="25" fill="#00C853" rx="3"/>
+    <text x="50" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ORB</text>
+    
+    <rect x="100" y="65" width="80" height="25" fill="#00E676" rx="3"/>
+    <text x="140" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Harris</text>
+    
+    <!-- Keypoints visualization -->
+    <circle cx="30" cy="100" r="2" fill="#00C853"/>
+    <circle cx="45" cy="105" r="2" fill="#00C853"/>
+    <circle cx="60" cy="95" r="2" fill="#00C853"/>
+    <circle cx="75" cy="102" r="2" fill="#00C853"/>
+    <circle cx="90" cy="98" r="2" fill="#00C853"/>
+    <circle cx="105" cy="103" r="2" fill="#00C853"/>
+    <circle cx="120" cy="96" r="2" fill="#00C853"/>
+    <circle cx="135" cy="101" r="2" fill="#00C853"/>
+    <circle cx="150" cy="97" r="2" fill="#00C853"/>
+    <circle cx="165" cy="104" r="2" fill="#00C853"/>
+    <circle cx="180" cy="99" r="2" fill="#00C853"/>
+  </g>
+  
+  <!-- Deep Learning Integration -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#00C853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Deep Learning Integration</text>
+    
+    <!-- Framework boxes -->
+    <rect x="10" y="35" width="70" height="25" fill="#00C853" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">TensorFlow</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#00E676" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">PyTorch</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#00C853" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">ONNX</text>
+    
+    <!-- Applications -->
+    <text x="10" y="75" fill="#666666" font-family="monospace" font-size="9">• Face Recognition</text>
+    <text x="10" y="87" fill="#666666" font-family="monospace" font-size="9">• Object Tracking</text>
+    <text x="10" y="99" fill="#666666" font-family="monospace" font-size="9">• Semantic Segmentation</text>
+    <text x="10" y="111" fill="#666666" font-family="monospace" font-size="9">• Pose Estimation</text>
+    
+    <text x="130" y="75" fill="#666666" font-family="monospace" font-size="9">• Style Transfer</text>
+    <text x="130" y="87" fill="#666666" font-family="monospace" font-size="9">• Super Resolution</text>
+    <text x="130" y="99" fill="#666666" font-family="monospace" font-size="9">• Image Generation</text>
+    <text x="130" y="111" fill="#666666" font-family="monospace" font-size="9">• Video Analysis</text>
+  </g>
+  
+  <!-- OpenCV Functions -->
+  <g transform="translate(380, 280)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#00C853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Core Functions</text>
+    
+    <!-- Function examples -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">cv2.imread('image.jpg')</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">cv2.GaussianBlur(img, (5,5), 0)</text>
+    <text x="10" y="76" fill="#666666" font-family="monospace" font-size="9">cv2.Canny(img, 100, 200)</text>
+    <text x="10" y="88" fill="#666666" font-family="monospace" font-size="9">cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</text>
+    <text x="10" y="100" fill="#666666" font-family="monospace" font-size="9">cv2.drawContours(img, contours, -1, (0,255,0), 3)</text>
+    <text x="10" y="112" fill="#666666" font-family="monospace" font-size="9">cv2.imshow('Result', img)</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00C853"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Computer Vision with OpenCV</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Image Processing & Computer Vision</text>
+</svg>

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF8F00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- TensorFlow Logo -->
+  <g transform="translate(350, 120)">
+    <text x="50" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="bold">TensorFlow</text>
+    <text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Deep Learning</text>
+  </g>
+  
+  <!-- Neural Network Architecture -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6F00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Neural Network</text>
+    
+    <!-- Input layer -->
+    <circle cx="20" cy="40" r="8" fill="#FF6F00" opacity="0.8"/>
+    <circle cx="20" cy="60" r="8" fill="#FF6F00" opacity="0.8"/>
+    <circle cx="20" cy="80" r="8" fill="#FF6F00" opacity="0.8"/>
+    
+    <!-- Hidden layer 1 -->
+    <circle cx="70" cy="35" r="8" fill="#FF8F00" opacity="0.8"/>
+    <circle cx="70" cy="55" r="8" fill="#FF8F00" opacity="0.8"/>
+    <circle cx="70" cy="75" r="8" fill="#FF8F00" opacity="0.8"/>
+    <circle cx="70" cy="95" r="8" fill="#FF8F00" opacity="0.8"/>
+    
+    <!-- Hidden layer 2 -->
+    <circle cx="120" cy="40" r="8" fill="#FFA000" opacity="0.8"/>
+    <circle cx="120" cy="60" r="8" fill="#FFA000" opacity="0.8"/>
+    <circle cx="120" cy="80" r="8" fill="#FFA000" opacity="0.8"/>
+    
+    <!-- Output layer -->
+    <circle cx="170" cy="50" r="8" fill="#FF6F00" opacity="0.8"/>
+    <circle cx="170" cy="70" r="8" fill="#FF6F00" opacity="0.8"/>
+    
+    <!-- Connections -->
+    <line x1="28" y1="40" x2="62" y2="35" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="40" x2="62" y2="55" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="60" x2="62" y2="35" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="60" x2="62" y2="55" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="60" x2="62" y2="75" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="80" x2="62" y2="55" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="80" x2="62" y2="75" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="28" y1="80" x2="62" y2="95" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <line x1="78" y1="35" x2="112" y2="40" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="35" x2="112" y2="60" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="55" x2="112" y2="40" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="55" x2="112" y2="60" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="55" x2="112" y2="80" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="75" x2="112" y2="60" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="75" x2="112" y2="80" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="78" y1="95" x2="112" y2="80" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <line x1="128" y1="40" x2="162" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="128" y1="40" x2="162" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="128" y1="60" x2="162" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="128" y1="60" x2="162" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="128" y1="80" x2="162" y2="50" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="128" y1="80" x2="162" y2="70" stroke="#CCCCCC" stroke-width="1"/>
+    
+    <text x="20" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Input</text>
+    <text x="70" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Hidden 1</text>
+    <text x="120" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Hidden 2</text>
+    <text x="170" y="115" text-anchor="middle" fill="#666666" font-family="monospace" font-size="8">Output</text>
+  </g>
+  
+  <!-- TensorFlow Operations -->
+  <g transform="translate(330, 100)">
+    <rect x="0" y="0" width="200" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="100" y="20" text-anchor="middle" fill="#FF6F00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">TensorFlow Ops</text>
+    
+    <!-- Operation boxes -->
+    <rect x="10" y="35" width="80" height="25" fill="#FF6F00" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">tf.constant</text>
+    
+    <rect x="100" y="35" width="80" height="25" fill="#FF8F00" rx="3"/>
+    <text x="140" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">tf.Variable</text>
+    
+    <rect x="10" y="65" width="80" height="25" fill="#FFA000" rx="3"/>
+    <text x="50" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">tf.matmul</text>
+    
+    <rect x="100" y="65" width="80" height="25" fill="#FF6F00" rx="3"/>
+    <text x="140" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">tf.nn.relu</text>
+    
+    <rect x="55" y="95" width="90" height="20" fill="#FF8F00" rx="3"/>
+    <text x="100" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">tf.GradientTape</text>
+  </g>
+  
+  <!-- Model Training -->
+  <g transform="translate(560, 100)">
+    <rect x="0" y="0" width="180" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="90" y="20" text-anchor="middle" fill="#FF6F00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Training Process</text>
+    
+    <!-- Training steps -->
+    <text x="10" y="40" fill="#666666" font-family="monospace" font-size="9">model.compile(optimizer='adam',</text>
+    <text x="10" y="52" fill="#666666" font-family="monospace" font-size="9">              loss='categorical_crossentropy',</text>
+    <text x="10" y="64" fill="#666666" font-family="monospace" font-size="9">              metrics=['accuracy'])</text>
+    
+    <text x="10" y="80" fill="#666666" font-family="monospace" font-size="9">model.fit(X_train, y_train,</text>
+    <text x="10" y="92" fill="#666666" font-family="monospace" font-size="9">          epochs=10,</text>
+    <text x="10" y="104" fill="#666666" font-family="monospace" font-size="9">          batch_size=32)</text>
+  </g>
+  
+  <!-- Keras Layers -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#FF6F00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Keras Layers</text>
+    
+    <!-- Layer types -->
+    <rect x="10" y="35" width="70" height="25" fill="#FF6F00" rx="3"/>
+    <text x="45" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Dense</text>
+    
+    <rect x="90" y="35" width="70" height="25" fill="#FF8F00" rx="3"/>
+    <text x="125" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Conv2D</text>
+    
+    <rect x="170" y="35" width="70" height="25" fill="#FFA000" rx="3"/>
+    <text x="205" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">MaxPool2D</text>
+    
+    <rect x="10" y="65" width="70" height="25" fill="#FF6F00" rx="3"/>
+    <text x="45" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Dropout</text>
+    
+    <rect x="90" y="65" width="70" height="25" fill="#FF8F00" rx="3"/>
+    <text x="125" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Flatten</text>
+    
+    <rect x="170" y="65" width="70" height="25" fill="#FFA000" rx="3"/>
+    <text x="205" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">LSTM</text>
+    
+    <text x="125" y="105" text-anchor="middle" fill="#666666" font-family="monospace" font-size="9">tf.keras.Sequential([...])</text>
+  </g>
+  
+  <!-- Applications -->
+  <g transform="translate(380, 250)">
+    <rect x="0" y="0" width="250" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="125" y="20" text-anchor="middle" fill="#FF6F00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Applications</text>
+    
+    <!-- Application areas -->
+    <rect x="10" y="35" width="100" height="25" fill="#FF6F00" rx="3"/>
+    <text x="60" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Computer Vision</text>
+    
+    <rect x="120" y="35" width="100" height="25" fill="#FF8F00" rx="3"/>
+    <text x="170" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">NLP</text>
+    
+    <rect x="10" y="65" width="100" height="25" fill="#FFA000" rx="3"/>
+    <text x="60" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Time Series</text>
+    
+    <rect x="120" y="65" width="100" height="25" fill="#FF6F00" rx="3"/>
+    <text x="170" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Recommendation</text>
+    
+    <rect x="65" y="95" width="120" height="20" fill="#FF8F00" rx="3"/>
+    <text x="125" y="108" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Generative Models</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Deep Learning with TensorFlow</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">Neural Networks & Deep Learning</text>
+</svg>

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776AB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD43B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3776AB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Python Logo -->
+  <g transform="translate(350, 120)">
+    <!-- Python snake shape -->
+    <circle cx="30" cy="30" r="15" fill="#3776AB" opacity="0.9"/>
+    <circle cx="70" cy="30" r="15" fill="#FFD43B" opacity="0.9"/>
+    <circle cx="50" cy="50" r="15" fill="#3776AB" opacity="0.9"/>
+    <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Python</text>
+    <text x="50" y="100" text-anchor="middle" fill="#FFD43B" font-family="Arial, sans-serif" font-size="12">🐍</text>
+  </g>
+  
+  <!-- NumPy Array -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="120" height="100" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="60" y="20" text-anchor="middle" fill="#3776AB" font-family="monospace" font-size="12" font-weight="bold">NumPy Array</text>
+    
+    <!-- Array representation -->
+    <rect x="15" y="30" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="40" y="30" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="65" y="30" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="90" y="30" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    
+    <rect x="15" y="50" width="20" height="15" fill="#FFD43B" opacity="0.7"/>
+    <rect x="40" y="50" width="20" height="15" fill="#FFD43B" opacity="0.7"/>
+    <rect x="65" y="50" width="20" height="15" fill="#FFD43B" opacity="0.7"/>
+    <rect x="90" y="50" width="20" height="15" fill="#FFD43B" opacity="0.7"/>
+    
+    <rect x="15" y="70" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="40" y="70" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="65" y="70" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    <rect x="90" y="70" width="20" height="15" fill="#3776AB" opacity="0.7"/>
+    
+    <text x="60" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="10">np.array([...])</text>
+  </g>
+  
+  <!-- Pandas DataFrame -->
+  <g transform="translate(250, 100)">
+    <rect x="0" y="0" width="140" height="100" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="70" y="20" text-anchor="middle" fill="#3776AB" font-family="monospace" font-size="12" font-weight="bold">Pandas DataFrame</text>
+    
+    <!-- Table representation -->
+    <rect x="10" y="30" width="120" height="60" fill="#F5F5F5" rx="2"/>
+    
+    <!-- Header row -->
+    <rect x="10" y="30" width="30" height="15" fill="#3776AB" opacity="0.8"/>
+    <rect x="40" y="30" width="30" height="15" fill="#3776AB" opacity="0.8"/>
+    <rect x="70" y="30" width="30" height="15" fill="#3776AB" opacity="0.8"/>
+    <rect x="100" y="30" width="30" height="15" fill="#3776AB" opacity="0.8"/>
+    
+    <!-- Data rows -->
+    <rect x="10" y="45" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="40" y="45" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="70" y="45" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="100" y="45" width="30" height="15" fill="#FFFFFF"/>
+    
+    <rect x="10" y="60" width="30" height="15" fill="#F0F0F0"/>
+    <rect x="40" y="60" width="30" height="15" fill="#F0F0F0"/>
+    <rect x="70" y="60" width="30" height="15" fill="#F0F0F0"/>
+    <rect x="100" y="60" width="30" height="15" fill="#F0F0F0"/>
+    
+    <rect x="10" y="75" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="40" y="75" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="70" y="75" width="30" height="15" fill="#FFFFFF"/>
+    <rect x="100" y="75" width="30" height="15" fill="#FFFFFF"/>
+    
+    <text x="70" y="95" text-anchor="middle" fill="#666666" font-family="monospace" font-size="10">pd.DataFrame()</text>
+  </g>
+  
+  <!-- Data Processing Pipeline -->
+  <g transform="translate(450, 250)">
+    <rect x="0" y="0" width="300" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="150" y="20" text-anchor="middle" fill="#3776AB" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Data Processing Pipeline</text>
+    
+    <!-- Pipeline steps -->
+    <rect x="20" y="35" width="60" height="25" fill="#3776AB" rx="3"/>
+    <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Load Data</text>
+    
+    <rect x="90" y="35" width="60" height="25" fill="#FFD43B" rx="3"/>
+    <text x="120" y="52" text-anchor="middle" fill="#3776AB" font-family="Arial, sans-serif" font-size="10">Clean</text>
+    
+    <rect x="160" y="35" width="60" height="25" fill="#3776AB" rx="3"/>
+    <text x="190" y="52" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10">Transform</text>
+    
+    <rect x="230" y="35" width="60" height="25" fill="#FFD43B" rx="3"/>
+    <text x="260" y="52" text-anchor="middle" fill="#3776AB" font-family="Arial, sans-serif" font-size="10">Analyze</text>
+    
+    <!-- Arrows -->
+    <path d="M 80 47 L 90 47" stroke="#3776AB" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 150 47 L 160 47" stroke="#3776AB" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 220 47 L 230 47" stroke="#3776AB" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Code examples -->
+    <text x="20" y="80" fill="#666666" font-family="monospace" font-size="9">df.read_csv('data.csv')</text>
+    <text x="20" y="95" fill="#666666" font-family="monospace" font-size="9">df.dropna()</text>
+    <text x="20" y="110" fill="#666666" font-family="monospace" font-size="9">df.groupby('column')</text>
+  </g>
+  
+  <!-- Statistical Analysis -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="150" height="120" fill="#FFFFFF" opacity="0.9" rx="6"/>
+    <text x="75" y="20" text-anchor="middle" fill="#3776AB" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Statistics</text>
+    
+    <!-- Chart -->
+    <rect x="10" y="30" width="130" height="60" fill="#F5F5F5" rx="2"/>
+    
+    <!-- Bar chart -->
+    <rect x="20" y="70" width="15" height="20" fill="#3776AB"/>
+    <rect x="40" y="60" width="15" height="30" fill="#FFD43B"/>
+    <rect x="60" y="50" width="15" height="40" fill="#3776AB"/>
+    <rect x="80" y="65" width="15" height="25" fill="#FFD43B"/>
+    <rect x="100" y="55" width="15" height="35" fill="#3776AB"/>
+    <rect x="120" y="70" width="15" height="20" fill="#FFD43B"/>
+    
+    <!-- Stats -->
+    <text x="10" y="105" fill="#666666" font-family="monospace" font-size="9">mean: 45.2</text>
+    <text x="60" y="105" fill="#666666" font-family="monospace" font-size="9">std: 12.8</text>
+    <text x="110" y="105" fill="#666666" font-family="monospace" font-size="9">median: 44</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3776AB"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="bold">Python for Data Science</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" opacity="0.9">NumPy, Pandas & Data Analysis</text>
+</svg>
