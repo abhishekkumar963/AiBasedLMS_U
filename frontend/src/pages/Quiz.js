@@ -138,45 +138,18 @@ const Quiz = () => {
     setLoading(true);
     setError(null);
     
-    // Add timeout for the entire request
-    const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(() => reject(new Error('Request timeout - please try again')), 45000);
-    });
-    
     try {
       console.log('Generating quiz with:', { selectedCourse, topic });
       console.log('Auth token:', localStorage.getItem('token'));
       
-      // Try the real AI endpoint first
-      let response;
-      try {
-        response = await Promise.race([
-          axios.post('/api/ai/generate-quiz', {
-            courseId: selectedCourse,
-            topic,
-            questionCount: 10,
-            difficulty: 'medium'
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using real AI endpoint');
-      } catch (aiError) {
-        console.log('AI endpoint failed, using test endpoint:', aiError.message);
-        if (aiError.message === 'Request timeout - please try again') {
-          throw aiError;
-        }
-        // Fall back to test endpoint
-        response = await Promise.race([
-          axios.post('/api/ai/generate-quiz-test', {
-            courseId: selectedCourse,
-            topic,
-            questionCount: 10,
-            difficulty: 'medium'
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using test endpoint (mock data)');
-      }
+      const response = await axios.post('/api/ai/generate-quiz', {
+        courseId: selectedCourse,
+        topic,
+        questionCount: 10,
+        difficulty: 'medium'
+      }, {
+        timeout: 240000
+      });
 
       console.log('API Response:', response.data);
       console.log('Quiz data received:', response.data.quiz);

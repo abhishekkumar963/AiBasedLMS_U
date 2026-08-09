@@ -41,12 +41,3 @@ cd frontend
 npm install
 npm start
 ```
-
-### Environment Variables
-Create a `.env` file in the backend directory:
-```
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GEMINI_API_KEY=your_google_gemini_api_key
-PORT=5002
-```

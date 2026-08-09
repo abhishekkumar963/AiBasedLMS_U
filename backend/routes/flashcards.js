@@ -13,6 +13,7 @@ router.get('/', auth, async (req, res) => {
     if (courseId) {
       query.course = courseId;
     }
+    
 
     const flashcards = await Flashcard.find(query)
       .populate('course', 'title')

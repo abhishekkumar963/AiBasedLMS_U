@@ -177,40 +177,14 @@ const Flashcards = () => {
     e.preventDefault();
     setLoading(true);
     
-    // Add timeout for the entire request
-    const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(() => reject(new Error('Request timeout - please try again')), 45000);
-    });
-    
     try {
-      // Try real AI endpoint first
-      let response;
-      try {
-        response = await Promise.race([
-          axios.post('/api/ai/generate-flashcards', {
-            courseId: selectedCourse,
-            topic: generateData.topic,
-            cardCount: generateData.cardCount
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using real AI endpoint');
-      } catch (aiError) {
-        console.log('AI endpoint failed, using test endpoint:', aiError.message);
-        if (aiError.message === 'Request timeout - please try again') {
-          throw aiError;
-        }
-        // Fall back to test endpoint
-        response = await Promise.race([
-          axios.post('/api/ai/generate-flashcards-test', {
-            courseId: selectedCourse,
-            topic: generateData.topic,
-            cardCount: generateData.cardCount
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using test endpoint (mock data)');
-      }
+      const response = await axios.post('/api/ai/generate-flashcards', {
+        courseId: selectedCourse,
+        topic: generateData.topic,
+        cardCount: generateData.cardCount
+      }, {
+        timeout: 240000
+      });
 
       setFlashcards([...flashcards, ...response.data.flashcards]);
       updateStats([...flashcards, ...response.data.flashcards]);

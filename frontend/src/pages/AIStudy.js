@@ -106,40 +106,14 @@ const AIStudy = () => {
     setLoading(true);
     setError(null);
     
-    // Add timeout for the entire request
-    const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(() => reject(new Error('Request timeout - please try again')), 45000);
-    });
-    
     try {
-      // Try the real AI endpoint first
-      let response;
-      try {
-        response = await Promise.race([
-          axios.post('/api/ai/generate-study-material', {
-            courseId: selectedCourse,
-            topic,
-            difficulty
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using real AI endpoint');
-      } catch (aiError) {
-        console.log('AI endpoint failed, using test endpoint:', aiError.message);
-        if (aiError.message === 'Request timeout - please try again') {
-          throw aiError;
-        }
-        // Fall back to test endpoint
-        response = await Promise.race([
-          axios.post('/api/ai/generate-study-material-test', {
-            courseId: selectedCourse,
-            topic,
-            difficulty
-          }),
-          timeoutPromise
-        ]);
-        console.log('Using test endpoint (mock data)');
-      }
+      const response = await axios.post('/api/ai/generate-study-material', {
+        courseId: selectedCourse,
+        topic,
+        difficulty
+      }, {
+        timeout: 240000
+      });
 
       console.log('API Response:', response.data);
       console.log('Study material received:', response.data.studyMaterial);
@@ -163,6 +137,10 @@ const AIStudy = () => {
         setError('Please log in to generate study materials');
       } else if (error.response?.status === 404) {
         setError('Course not found. Please select a valid course');
+      } else if (error.response?.status === 429) {
+        setError('AI service is rate-limited right now. Please wait a few seconds and try again.');
+      } else if (error.response?.status === 503) {
+        setError('AI service is busy right now. Please retry shortly.');
       } else if (error.response?.data?.message) {
         setError(error.response.data.message);
       } else {
@@ -487,16 +465,6 @@ Answer: ${q.answer}
           <div className="lg:col-span-2">
             {studyMaterial ? (
               <div className="card">
-                {/* Debug info */}
-                <div className="mb-4 p-2 bg-blue-500/20 rounded text-xs text-blue-300">
-                  DEBUG: studyMaterial exists - {JSON.stringify(Object.keys(studyMaterial))}
-                  <br />
-                  DEBUG: explanation length - {studyMaterial.explanation?.length || 0}
-                  <br />
-                  DEBUG: keyConcepts length - {studyMaterial.keyConcepts?.length || 0}
-                  <br />
-                  DEBUG: selectedSection - {selectedSection}
-                </div>
                 {/* Enhanced Header with Actions */}
                 <div className="flex items-center justify-between mb-6">
                   <div>
@@ -681,10 +649,6 @@ Answer: ${q.answer}
               </div>
             ) : (
               <div className="card text-center py-16">
-                {/* Debug info */}
-                <div className="mb-4 p-2 bg-red-500/20 rounded text-xs text-red-300">
-                  DEBUG: No studyMaterial - Loading: {loading.toString()}, Error: {error || 'none'}
-                </div>
                 <div className="w-20 h-20 bg-gradient-to-br from-neon-500/20 to-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6 neon-glow-blue">
                   <Brain className="w-10 h-10 text-neon-400" />
                 </div>
