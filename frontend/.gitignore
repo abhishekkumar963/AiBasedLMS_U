@@ -4,3 +4,7 @@
 .env.local
 dist/
 build/
+.vercel/
+
+.vercel
+.env*
