@@ -14,7 +14,7 @@ import {
   Calendar,
   Award
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const CourseDetail = () => {
   const { id } = useParams();
@@ -29,7 +29,7 @@ const CourseDetail = () => {
 
   const fetchCourse = async () => {
     try {
-      const response = await axios.get(`/api/courses/${id}`);
+      const response = await api.get(`/api/courses/${id}`);
       setCourse(response.data.course);
     } catch (error) {
       console.error('Failed to fetch course:', error);
@@ -41,7 +41,7 @@ const CourseDetail = () => {
   const handleEnroll = async () => {
     setEnrolling(true);
     try {
-      await axios.post(`/api/courses/${id}/enroll`);
+      await api.post(`/api/courses/${id}/enroll`);
       fetchCourse(); // Refresh course data
     } catch (error) {
       console.error('Failed to enroll:', error);

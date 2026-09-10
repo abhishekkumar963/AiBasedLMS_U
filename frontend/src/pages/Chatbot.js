@@ -8,7 +8,7 @@ import {
   BookOpen,
   Sparkles
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Chatbot = () => {
   const [searchParams] = useSearchParams();
@@ -38,7 +38,7 @@ const Chatbot = () => {
 
   const fetchEnrolledCourses = async () => {
     try {
-      const response = await axios.get('/api/courses/enrolled/my-courses');
+      const response = await api.get('/api/courses/enrolled/my-courses');
       setCourses(response.data.courses);
     } catch (error) {
       console.error('Failed to fetch courses:', error);
@@ -66,7 +66,7 @@ const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/ai/chat', {
+      const response = await api.post('/api/ai/chat', {
         message: inputMessage.trim(),
         courseId: selectedCourse || undefined
       });

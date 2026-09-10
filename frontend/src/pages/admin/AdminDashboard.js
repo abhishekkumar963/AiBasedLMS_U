@@ -10,7 +10,7 @@ import {
   Activity,
   BarChart3
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../../utils/api';
 
 const AdminDashboard = () => {
   const [dashboard, setDashboard] = useState(null);
@@ -22,7 +22,7 @@ const AdminDashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await axios.get('/api/admin/dashboard');
+      const response = await api.get('/api/admin/dashboard');
       setDashboard(response.data.dashboard);
     } catch (error) {
       console.error('Failed to fetch dashboard data:', error);

@@ -10,7 +10,7 @@ import {
   ChevronDown,
   Play
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -43,7 +43,7 @@ const Courses = () => {
         search: searchTerm || undefined
       };
 
-      const response = await axios.get('/api/courses', { params });
+      const response = await api.get('/api/courses', { params });
       setCourses(response.data.courses);
       setPagination({
         currentPage: response.data.currentPage,
@@ -59,7 +59,7 @@ const Courses = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('/api/courses/categories/list');
+      const response = await api.get('/api/courses/categories/list');
       setCategories(response.data.categories);
     } catch (error) {
       console.error('Failed to fetch categories:', error);
@@ -74,7 +74,7 @@ const Courses = () => {
 
   const handleEnroll = async (courseId) => {
     try {
-      await axios.post(`/api/courses/${courseId}/enroll`);
+      await api.post(`/api/courses/${courseId}/enroll`);
       // Refresh courses to update enrolled status
       fetchCourses();
     } catch (error) {

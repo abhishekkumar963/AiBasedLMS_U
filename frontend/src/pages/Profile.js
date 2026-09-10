@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { User, Mail, BookOpen, Calendar, Award, Settings, TrendingUp, BarChart3, Clock, Target, Zap, Check, X, Camera, Upload, MapPin, Globe, Github, Twitter, Linkedin, Instagram, Facebook, Palette, Music, Film, Gamepad2, Code, Coffee, Heart, Star } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import axios from 'axios';
+import api from '../utils/api';
 import { initScrollAnimations, reinitAnimations } from '../utils/scrollAnimations';
 
 const Profile = () => {
@@ -112,7 +112,7 @@ const Profile = () => {
     formData.append('profilePhoto', profilePhoto);
     
     try {
-      const response = await axios.post('/api/auth/upload-profile-photo', formData, {
+      const response = await api.post('/api/auth/upload-profile-photo', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -131,7 +131,7 @@ const Profile = () => {
 
   const removeProfilePhoto = async () => {
     try {
-      await axios.delete('/api/auth/remove-profile-photo');
+      await api.delete('/api/auth/remove-profile-photo');
       setPhotoPreview(null);
       await updateProfile({ profilePhoto: null });
       setMessage('Profile photo removed successfully!');

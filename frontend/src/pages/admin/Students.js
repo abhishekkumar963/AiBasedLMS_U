@@ -11,7 +11,7 @@ import {
   Calendar,
   Activity
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../../utils/api';
 
 const Students = () => {
   const [students, setStudents] = useState([]);
@@ -40,7 +40,7 @@ const Students = () => {
         search: searchTerm || undefined
       };
 
-      const response = await axios.get('/api/admin/students', { params });
+      const response = await api.get('/api/admin/students', { params });
       setStudents(response.data.students);
       setPagination({
         currentPage: response.data.currentPage,

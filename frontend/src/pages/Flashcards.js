@@ -31,7 +31,7 @@ import {
   Award,
   Timer
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Flashcards = () => {
   const [searchParams] = useSearchParams();
@@ -93,13 +93,13 @@ const Flashcards = () => {
 
   const fetchEnrolledCourses = async () => {
     try {
-      const response = await axios.get('/api/courses/enrolled/my-courses');
+      const response = await api.get('/api/courses/enrolled/my-courses');
       setCourses(response.data.courses);
     } catch (error) {
       console.error('Failed to fetch courses:', error);
       // If not enrolled in any courses, fetch all courses as fallback
       try {
-        const allCoursesResponse = await axios.get('/api/courses');
+        const allCoursesResponse = await api.get('/api/courses');
         setCourses(allCoursesResponse.data.courses);
       } catch (fallbackError) {
         console.error('Failed to fetch all courses:', fallbackError);
@@ -109,7 +109,7 @@ const Flashcards = () => {
 
   const fetchFlashcards = async () => {
     try {
-      const response = await axios.get(`/api/flashcards?courseId=${selectedCourse}`);
+      const response = await api.get(`/api/flashcards?courseId=${selectedCourse}`);
       setFlashcards(response.data.flashcards);
       updateStats(response.data.flashcards);
     } catch (error) {
@@ -161,7 +161,7 @@ const Flashcards = () => {
     if (studySession.startTime) {
       const duration = Math.floor((new Date() - studySession.startTime) / 60000);
       // Track session
-      axios.post('/api/activity/track', {
+      api.post('/api/activity/track', {
         type: 'flashcard_session',
         metadata: {
           courseId: selectedCourse,
@@ -178,7 +178,7 @@ const Flashcards = () => {
     setLoading(true);
     
     try {
-      const response = await axios.post('/api/ai/generate-flashcards', {
+      const response = await api.post('/api/ai/generate-flashcards', {
         courseId: selectedCourse,
         topic: generateData.topic,
         cardCount: generateData.cardCount

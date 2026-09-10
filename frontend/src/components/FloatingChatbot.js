@@ -8,7 +8,7 @@ import {
   Minimize2,
   Maximize2
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const FloatingChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ const FloatingChatbot = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/ai/chat', {
+      const response = await api.post('/api/ai/chat', {
         message: inputMessage.trim()
       });
 

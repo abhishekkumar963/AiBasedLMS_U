@@ -24,7 +24,7 @@ import {
   Flag,
   Lightbulb
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Quiz = () => {
   const [courses, setCourses] = useState([]);
@@ -63,7 +63,7 @@ const Quiz = () => {
 
   const fetchQuizHistory = async () => {
     try {
-      const response = await axios.get('/api/activity/history?type=quiz_attempt');
+      const response = await api.get('/api/activity/history?type=quiz_attempt');
       setQuizHistory(response.data.activities.slice(0, 5));
     } catch (error) {
       console.error('Failed to fetch quiz history:', error);
@@ -119,13 +119,13 @@ const Quiz = () => {
 
   const fetchEnrolledCourses = async () => {
     try {
-      const response = await axios.get('/api/courses/enrolled/my-courses');
+      const response = await api.get('/api/courses/enrolled/my-courses');
       setCourses(response.data.courses);
     } catch (error) {
       console.error('Failed to fetch courses:', error);
       // If not enrolled in any courses, fetch all courses as fallback
       try {
-        const allCoursesResponse = await axios.get('/api/courses');
+        const allCoursesResponse = await api.get('/api/courses');
         setCourses(allCoursesResponse.data.courses);
       } catch (fallbackError) {
         console.error('Failed to fetch all courses:', fallbackError);
@@ -142,7 +142,7 @@ const Quiz = () => {
       console.log('Generating quiz with:', { selectedCourse, topic });
       console.log('Auth token:', localStorage.getItem('token'));
       
-      const response = await axios.post('/api/ai/generate-quiz', {
+      const response = await api.post('/api/ai/generate-quiz', {
         courseId: selectedCourse,
         topic,
         questionCount: 10,
@@ -232,7 +232,7 @@ const Quiz = () => {
     
     // Track activity
     const score = calculateScore();
-    axios.post('/api/activity/track', {
+    api.post('/api/activity/track', {
       type: 'quiz_attempt',
       metadata: {
         courseId: selectedCourse,

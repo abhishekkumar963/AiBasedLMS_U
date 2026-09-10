@@ -13,7 +13,7 @@ import {
   MessageSquare,
   Target
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../../utils/api';
 
 const StudentAnalytics = () => {
   const { id } = useParams();
@@ -26,7 +26,7 @@ const StudentAnalytics = () => {
 
   const fetchStudentAnalytics = async () => {
     try {
-      const response = await axios.get(`/api/admin/students/${id}/analytics`);
+      const response = await api.get(`/api/admin/students/${id}/analytics`);
       setAnalytics(response.data.analytics);
     } catch (error) {
       console.error('Failed to fetch student analytics:', error);

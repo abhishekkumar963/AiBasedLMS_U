@@ -17,7 +17,7 @@ import {
   Users
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -50,9 +50,9 @@ const Dashboard = () => {
   const fetchDashboardData = async () => {
     try {
       const [statsRes, coursesRes, featuredRes] = await Promise.all([
-        axios.get('/api/activity/stats'),
-        axios.get('/api/courses/enrolled/my-courses'),
-        axios.get('/api/courses/featured/list')
+        api.get('/api/activity/stats'),
+        api.get('/api/courses/enrolled/my-courses'),
+        api.get('/api/courses/featured/list')
       ]);
 
       setStats(statsRes.data.stats);

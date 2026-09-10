@@ -26,7 +26,7 @@ import {
   Play,
   Pause
 } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const AIStudy = () => {
   const [searchParams] = useSearchParams();
@@ -68,13 +68,13 @@ const AIStudy = () => {
 
   const fetchEnrolledCourses = async () => {
     try {
-      const response = await axios.get('/api/courses/enrolled/my-courses');
+      const response = await api.get('/api/courses/enrolled/my-courses');
       setCourses(response.data.courses);
     } catch (error) {
       console.error('Failed to fetch courses:', error);
       // If not enrolled in any courses, fetch all courses as fallback
       try {
-        const allCoursesResponse = await axios.get('/api/courses');
+        const allCoursesResponse = await api.get('/api/courses');
         setCourses(allCoursesResponse.data.courses);
       } catch (fallbackError) {
         console.error('Failed to fetch all courses:', fallbackError);
@@ -84,7 +84,7 @@ const AIStudy = () => {
 
   const fetchGeneratedHistory = async () => {
     try {
-      const response = await axios.get('/api/activity/history?type=study_material_generated');
+      const response = await api.get('/api/activity/history?type=study_material_generated');
       setGeneratedHistory(response.data.activities.slice(0, 5));
     } catch (error) {
       console.error('Failed to fetch history:', error);
@@ -107,7 +107,7 @@ const AIStudy = () => {
     setError(null);
     
     try {
-      const response = await axios.post('/api/ai/generate-study-material', {
+      const response = await api.post('/api/ai/generate-study-material', {
         courseId: selectedCourse,
         topic,
         difficulty
@@ -157,7 +157,7 @@ const AIStudy = () => {
 
   const fetchBookmarkedMaterials = async () => {
     try {
-      const response = await axios.get('/api/activity/bookmarks?type=study_material');
+      const response = await api.get('/api/activity/bookmarks?type=study_material');
       setBookmarkedMaterials(response.data.bookmarks || []);
     } catch (error) {
       console.error('Failed to fetch bookmarks:', error);
@@ -171,10 +171,10 @@ const AIStudy = () => {
       const isBookmarked = bookmarkedMaterials.some(b => b.metadata.materialId === studyMaterial.id);
       
       if (isBookmarked) {
-        await axios.delete(`/api/activity/bookmark/${studyMaterial.id}`);
+        await api.delete(`/api/activity/bookmark/${studyMaterial.id}`);
         setBookmarkedMaterials(prev => prev.filter(b => b.metadata.materialId !== studyMaterial.id));
       } else {
-        await axios.post('/api/activity/bookmark', {
+        await api.post('/api/activity/bookmark', {
           type: 'study_material',
           metadata: {
             materialId: studyMaterial.id,
