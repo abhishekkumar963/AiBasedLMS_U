@@ -16,10 +16,28 @@ const app = express();
 
 // Security middleware
 app.use(helmet());
+
+// Comma-separated browser origins permitted to call the API. The Vercel URL is
+// the production frontend; configure FRONTEND_URLS on the host for custom domains.
+const allowedOrigins = (process.env.FRONTEND_URLS || [
+  'http://localhost:3000',
+  'http://localhost:3001',
+  'https://ai-based-lms-frontend.vercel.app'
+].join(','))
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
-    : ['http://localhost:3000', 'http://localhost:3001'],
+  origin(origin, callback) {
+    // Requests without an Origin header (health checks, server-to-server calls)
+    // do not need browser CORS validation.
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error(`CORS blocked for origin: ${origin}`));
+  },
   credentials: true
 }));
 
