@@ -14,6 +14,10 @@ const flashcardRoutes = require('./routes/flashcards');
 
 const app = express();
 
+// Render terminates TLS at a reverse proxy and forwards the original client IP.
+// Trust only that single proxy hop so rate limiting works correctly in production.
+app.set('trust proxy', 1);
+
 // Security middleware
 app.use(helmet());
 
